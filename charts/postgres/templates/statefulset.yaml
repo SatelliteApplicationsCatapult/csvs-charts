@@ -28,7 +28,7 @@ spec:
             protocol: TCP
         volumeMounts:
           - mountPath: /var/lib/postgresql/data/pgdata 
-            name: postgresdatadefault
+            name:  {{ .Values.pv.remote.name }}
         env:
           - name: POSTGRES_USER
             value: "geoserver"
@@ -36,12 +36,3 @@ spec:
             value: "supersecret"
           - name: PGDATA
             value: /var/lib/postgresql/data/pgdata
-  volumeClaimTemplates:
-  - metadata:
-      name: postgresdatadefault
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      storageClassName: {{ .Values.pv.local.storageClassName }}
-      resources:
-        requests:
-          storage: 1Gi
