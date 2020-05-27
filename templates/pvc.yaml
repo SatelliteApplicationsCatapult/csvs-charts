@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.pv.remote.name }}
   namespace: {{ .Values.pv.remote.namespace }}
 spec:
-  storageClassName: {{ .Values.pv.remote.storageClassName }}
+  storageClassName: {{ .Values.pv.remote.storageClassName | quote }}
   accessModes:
     - ReadWriteOnce
   resources:
