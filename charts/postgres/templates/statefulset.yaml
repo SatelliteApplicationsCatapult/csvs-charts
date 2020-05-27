@@ -39,8 +39,10 @@ spec:
     volumeClaimTemplates:
       - metadata:
         name: {{ .Values.pv.remote.name }}
+        namespace: {{ .Values.pv.remote.namespace }}
         spec:
           accessModes: [ "ReadWriteOnce" ]
+          storageClassName: {{ .Values.pv.remote.storageClassName | quote }}
           resources:
             requests:
-              storage: 2Gi
+              storage: 5Gi
