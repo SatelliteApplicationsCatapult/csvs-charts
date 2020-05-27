@@ -17,6 +17,8 @@ spec:
     spec:
       volumes:
         - name: postgresdatadefault
+          persistentVolumeClaim:
+            claimName: postgresdatadefault
       terminationGracePeriodSeconds: 10
       containers:
       - name: {{ .Chart.Name }}
