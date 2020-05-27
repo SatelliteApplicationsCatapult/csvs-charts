@@ -20,12 +20,12 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         volumeMounts:
           - mountPath: "/geoserver_data/data"
-            name: geoserverdata
+            name:  {{ .Values.pv.name }}
         ports:
         - name: http
           containerPort: {{ .Values.service.port }}
           protocol: TCP
       volumes:
-        - name: geoserverdata
+        - name: {{ .Values.pv.name }}
           persistentVolumeClaim:
-            claimName: geoserverdata
+            claimName:  {{ .Values.pv.name }}
