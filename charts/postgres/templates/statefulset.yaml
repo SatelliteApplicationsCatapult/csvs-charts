@@ -27,10 +27,10 @@ spec:
             containerPort: {{ .Values.service.port }}
             protocol: TCP
 
-          volumeMounts:
-            - mountPath: /var/lib/postgresql/data/pgdata 
-              name: postgresdatadefault
-              subPath: postgres-db
+        volumeMounts:
+          - mountPath: /var/lib/postgresql/data/pgdata 
+            name: postgresdatadefault
+            subPath: postgres-db
 
         env:
           - name: POSTGRES_USER
