@@ -71,6 +71,8 @@ tolerations: []
 affinity: {}
 
 pv:
-  local:
+  remote:
     # hostPath: /c/Users/Davide.DeLerma/projects/kube_geoserver_dir/
     storageClassName: fast
+    namespace: dev-csvs
+    name: dev-geoserver-csvs
