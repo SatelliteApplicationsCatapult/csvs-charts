@@ -25,3 +25,8 @@ spec:
         - name: http
           containerPort: {{ .Values.service.port }}
           protocol: TCP
+      volumes:
+        - name: {{ .Values.pv.remote.name }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.pv.remote.name }}
+      
