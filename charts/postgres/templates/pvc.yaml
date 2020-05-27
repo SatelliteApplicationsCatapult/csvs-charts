@@ -4,9 +4,9 @@ metadata:
   name: postgresdatadefault
   namespace: {{ .Values.pv.remote.namespace }}
 spec:
-  storageClassName: {{ .Values.pv.remote.storageClassName | quote }}
+  storageClassName: fast
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
