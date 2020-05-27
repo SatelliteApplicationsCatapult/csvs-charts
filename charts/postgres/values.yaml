@@ -67,9 +67,7 @@ tolerations: []
 
 affinity: {}
 
-pv:
+pvc:
   remote:
-    storageClassName: fast
-    namespace: dev-csvs
     name: dev-postgres-csvs
     

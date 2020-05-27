@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ .Values.pv.remote.name }}
-  namespace: {{ .Values.pv.remote.namespace }}
+  name: {{ .Values.pvc.remote.name }}
+  namespace: {{ .Values.pvc.remote.namespace }}
 spec:
-  storageClassName: {{ .Values.pv.remote.storageClassName | quote }}
+  storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
   accessModes:
     - ReadWriteOnce
   resources:

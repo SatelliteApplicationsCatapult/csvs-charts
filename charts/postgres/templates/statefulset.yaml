@@ -29,7 +29,7 @@ spec:
 
         volumeMounts:
           - mountPath: /var/lib/postgresql/data/pgdata 
-            name: postgresdatadefault
+            name: {{ .Values.pvc.remote.name }}
             subPath: postgres-db
 
         env:
@@ -42,7 +42,7 @@ spec:
 
   volumeClaimTemplates:
     - metadata:
-        name: postgresdatadefault
+        name: {{ .Values.pvc.remote.name }}
       spec:
         accessModes: [ "ReadWriteOnce" ]
         resources:
