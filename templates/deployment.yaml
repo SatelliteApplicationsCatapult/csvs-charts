@@ -27,6 +27,6 @@ spec:
           protocol: TCP
       volumes:
         - name: {{ .Values.pv.remote.name }}
-        persistentVolumeClaim:
-          claimName: {{ .Values.pv.remote.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.pv.remote.name }}
       
