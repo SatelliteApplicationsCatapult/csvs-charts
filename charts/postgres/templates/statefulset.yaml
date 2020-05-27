@@ -36,6 +36,10 @@ spec:
             value: "supersecret"
           - name: PGDATA
             value: /var/lib/postgresql/data/pgdata
+      volumes:
+        - name: {{ .Values.pv.remote.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.pv.remote.name }}
     volumeClaimTemplates:
       - metadata:
         name: {{ .Values.pv.remote.name }}
@@ -46,7 +50,4 @@ spec:
           resources:
             requests:
               storage: 5Gi
-    volumes:
-      - name: {{ .Values.pv.remote.name }}
-        persistentVolumeClaim:
-          claimName: {{ .Values.pv.remote.name }}
+    
