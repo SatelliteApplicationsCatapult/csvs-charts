@@ -15,11 +15,7 @@ spec:
       labels:
         {{- include "postgres.selectorLabels" . | nindent 8 }}
     spec:
-      volumes:
-        - name: postgresdatadefault
-          persistentVolumeClaim:
-            claimName: postgresdatadefault
-      terminationGracePeriodSeconds: 10
+
       containers:
       - name: {{ .Chart.Name }}
         securityContext:
@@ -30,9 +26,36 @@ spec:
           - name: http
             containerPort: {{ .Values.service.port }}
             protocol: TCP
-        volumeMounts:
-          - mountPath: /var/lib/postgresql/data/pgdata 
-            name: postgresdatadefault
+
+        livenessProbe:
+          exec:
+            command:
+              - sh
+              - -c
+              - exec pg_isready --host $POD_IP
+          failureThreshold: 6
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 5
+
+        readinessProbe:
+          exec:
+            command:
+              - sh
+              - -c
+              - exec pg_isready --host $POD_IP
+          failureThreshold: 3
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          successThreshold: 1
+          timeoutSeconds: 3
+
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data/pgdata 
+              name: postgresdatadefault
+              subPath: postgres-db
+
         env:
           - name: POSTGRES_USER
             value: "geoserver"
@@ -40,6 +63,7 @@ spec:
             value: "supersecret"
           - name: PGDATA
             value: /var/lib/postgresql/data/pgdata
+
   volumeClaimTemplates:
   - metadata:
       name: postgresdatadefault
