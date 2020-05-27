@@ -40,6 +40,20 @@ spec:
           - name: PGDATA
             value: /var/lib/postgresql/data/pgdata
 
+        {{- if .Values.livenessProbe.enabled }}
+        livenessProbe:
+          exec:
+            command:
+              - /bin/sh
+              - -c
+              - exec pg_isready -U geoserver -h 127.0.0.1 -p 5432
+          initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds }}
+          periodSeconds: {{ .Values.livenessProbe.periodSeconds }}
+          timeoutSeconds: {{ .Values.livenessProbe.timeoutSeconds }}
+          successThreshold: {{ .Values.livenessProbe.successThreshold }}
+          failureThreshold: {{ .Values.livenessProbe.failureThreshold }}
+        {{- end }}
+
   volumeClaimTemplates:
     - metadata:
         name: {{ .Values.pvc.remote.name }}

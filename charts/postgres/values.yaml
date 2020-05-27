@@ -70,4 +70,12 @@ affinity: {}
 pvc:
   remote:
     name: dev-postgres-csvs
+
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
     
