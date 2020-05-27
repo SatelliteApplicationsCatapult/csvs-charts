@@ -39,8 +39,8 @@ spec:
         volumeClaimTemplates:
           - metadata:
             name: {{ .Values.pv.remote.name }}
-          spec:
-            accessModes: [ "ReadWriteOnce" ]
-            resources:
-              requests:
-                storage: 2Gi
+            spec:
+              accessModes: [ "ReadWriteOnce" ]
+              resources:
+                requests:
+                  storage: 2Gi
