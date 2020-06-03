@@ -36,7 +36,10 @@ spec:
           - name: POSTGRES_USER
             value: "geoserver"
           - name: POSTGRES_PASSWORD
-            value: "supersecret"
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "postgres.fullname" . }}
+                key: postgres-password
           - name: PGDATA
             value: /var/lib/postgresql/data/pgdata
 
