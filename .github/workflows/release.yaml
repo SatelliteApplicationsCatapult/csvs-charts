@@ -1,13 +1,49 @@
-name: Release Charts
+name: Release
 
 on:
   push:
     branches:
       - master
+    paths:
+      - "charts/**"
+      - "templates/**"
 
 jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Fetch history
+        run: git fetch --prune --unshallow
+
+      - name: Run chart-testing (lint)
+        id: lint
+        # Support for Helm 2 is on branch dev-v2.
+        uses: helm/chart-testing-action@dev-v2
+        with:
+          command: lint
+
+  validation:
+    runs-on: ubuntu-latest
+    needs:
+      - linting
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Kubernetes toolset
+        uses: stefanprodan/kube-tools@v1.5.0
+        with:
+          kubectl: 1.15.10
+          helm: 2.16.0
+          command: helm template . | kubeval -v 1.15.0
+
   release:
     runs-on: ubuntu-latest
+    needs:
+      - validation
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -21,3 +57,27 @@ jobs:
         uses: helm/chart-releaser-action@master
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
+
+  update-readme:
+    runs-on: ubuntu-latest
+    needs:
+      - release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Generate documentation
+        run: |
+          curl --silent --show-error --fail --location --output /tmp/helm-docs.tar.gz https://github.com/norwoodj/helm-docs/releases/download/v0.13.0/helm-docs_0.13.0_Linux_x86_64.tar.gz
+          tar -xf /tmp/helm-docs.tar.gz helm-docs
+          ./helm-docs
+          rm helm-docs
+
+      - uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.CR_TOKEN }}
