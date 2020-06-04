@@ -6,11 +6,17 @@ replicaCount: 1
 
 image:
   repository: davidedelerma/geoserver
+  tag: "1.0"
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+
+cronjob:
+  repository: satapps/geoserver-backup
+  tag: latest
+  pullPolicy: Always
 
 serviceAccount:
   # Specifies whether a service account should be created

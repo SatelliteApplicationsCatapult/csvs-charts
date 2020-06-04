@@ -1,0 +1,32 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: geoserver-backup
+spec:
+  schedule: "0 0 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: geoserver-backup
+            image: "{{ .Values.cronjob.repository }}:{{ .Values.cronjob.tag }}"
+            imagePullPolicy: {{ .Values.cronjob.pullPolicy }}
+            env:
+                - name: AWS_ACCESS_KEY_ID
+                  value: 307282071fcfef61a70d
+                - name: AWS_SECRET_ACCESS_KEY
+                  value: y+w07ahZjvaaF6TNy8uhr82xj2ksy7nLhknTmIGW
+                - name: S3_BUCKET
+                  value: csvs-backups
+                - name: AWS_DEFAULT_REGION
+                  value: eu-west-1
+                - name: GEOSERVER_USERNAME
+                  value: admin
+                - name: GEOSERVER_PASSWORD
+                  value: geoserver
+                - name: S3_URL
+                  value: http://s3-uk-1.sa-catapult.co.uk
+                - name: GEOSERVER_URL
+                  value: http://geoserver-test-helm-geoserver-postgres:8080
+          restartPolicy: OnFailure
