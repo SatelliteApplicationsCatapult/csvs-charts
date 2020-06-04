@@ -15,8 +15,8 @@ fullnameOverride: ""
 
 cronjob:
   repository: satapps/geoserver-backup
-  tag: latest
-  pullPolicy: Always
+  tag: "sha-b4e2e34"
+  pullPolicy: IfNotPresent
 
 serviceAccount:
   # Specifies whether a service account should be created
