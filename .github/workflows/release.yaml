@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "charts/**"
-      - "templates/**"
+    paths-ignore:
+      - "**.md"
+      - "**.md.gotmpl"
+      - ".github/**"
 
 jobs:
   linting:
