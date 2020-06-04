@@ -1,0 +1,28 @@
+{{ template "chart.header" . }}
+
+![Version: {{ template "chart.version" . }}](https://img.shields.io/badge/Version-{{ template "chart.version" . }}-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![](https://github.com/SatelliteApplicationsCatapult/helm-geoserver-postgres/workflows/release/badge.svg)
+![Release](https://github.com/SatelliteApplicationsCatapult/helm-geoserver-postgres/workflows/Release/badge.svg)
+
+{{ template "chart.description" . }}
+
+## Usage
+
+1. Install [Helm](https://helm.sh). For more information, see [Helm documentation](https://helm.sh/docs/).
+
+2. Add the helm-geoserver-postgres Helm repository:
+
+```console
+$ helm repo add helm-geoserver-postgres https://SatelliteApplicationsCatapult.github.io/helm-geoserver-postgres
+$ helm repo update
+```
+
+3. View helm-geoserver-postgres Helm charts:
+
+ ```console
+ $ helm search helm-geoserver-postgres
+ ```
+
+{{ template "chart.requirementsSection" . }}
+
+{{ template "chart.valuesSection" . }}
