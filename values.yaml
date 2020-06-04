@@ -93,3 +93,7 @@ livenessProbe:
 readinessProbe:
   enabled: true
 
+geoserverUsername: admin
+geoserverPassword: geoserver
+awsAccessKeyId: test
+awsSecretAccessKey: test

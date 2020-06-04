@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: geoserver-backup
 spec:
-  schedule: "0 0 * * *"
+  schedule: "* * * * *"
   jobTemplate:
     spec:
       template:
@@ -14,17 +14,29 @@ spec:
             imagePullPolicy: {{ .Values.cronjob.pullPolicy }}
             env:
                 - name: AWS_ACCESS_KEY_ID
-                  value: 307282071fcfef61a70d
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "geoserver-chart.fullname" . }}
+                      key: aws-access-key-id
                 - name: AWS_SECRET_ACCESS_KEY
-                  value: y+w07ahZjvaaF6TNy8uhr82xj2ksy7nLhknTmIGW
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "geoserver-chart.fullname" . }}
+                      key: aws-secret-access-key
                 - name: S3_BUCKET
                   value: csvs-backups
                 - name: AWS_DEFAULT_REGION
                   value: eu-west-1
                 - name: GEOSERVER_USERNAME
-                  value: admin
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "geoserver-chart.fullname" . }}
+                      key: geoserver-username
                 - name: GEOSERVER_PASSWORD
-                  value: geoserver
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "geoserver-chart.fullname" . }}
+                      key: geoserver-password
                 - name: S3_URL
                   value: http://s3-uk-1.sa-catapult.co.uk
                 - name: GEOSERVER_URL
