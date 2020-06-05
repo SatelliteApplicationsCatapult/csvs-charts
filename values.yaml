@@ -93,7 +93,13 @@ livenessProbe:
 readinessProbe:
   enabled: true
 
-geoserverUsername: admin
-geoserverPassword: geoserver
-awsAccessKeyId: test
-awsSecretAccessKey: test
+global:
+  geoserverUsername: admin
+  geoserverPassword: geoserver
+  awsAccessKeyId: test
+  awsSecretAccessKey: test
+  postgresqlPassword: supersecret
+
+postgres:
+  postgresqlUsername: geoserver
+  postgresqlPassword: supersecret

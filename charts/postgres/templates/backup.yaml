@@ -1,0 +1,42 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: postgres-backup
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: postgres-backup
+            image: satapps/postgres-backup:sha-c6536e5
+            env:
+                - name: POSTGRES_HOST
+                  value: http://geoserver-test-postgres
+                - name: POSTGRES_PORT
+                  value: "5432"
+                - name: POSTGRES_USER
+                  value: {{ .Values.postgresqlUsername }}
+                - name: POSTGRES_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "postgres.fullname" . }}
+                      key: postgres-password
+                - name: S3_ACCESS_KEY_ID
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "geoserver-chart.fullname" . }}
+                      key: aws-access-key-id
+                - name: S3_SECRET_ACCESS_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "geoserver-chart.fullname" . }}
+                      key: aws-secret-access-key
+                - name: S3_BUCKET
+                  value: csvs-backups
+                - name: S3_REGION
+                  value: eu-west-1
+                - name: S3_URL
+                  value: http://s3-uk-1.sa-catapult.co.uk 
+          restartPolicy: OnFailure
