@@ -21,3 +21,7 @@ version: 0.2.0
 appVersion: 11-alpine
 
 home: satcat
+
+maintainers:
+    - name: davide de lerma
+      email: davide.delerma@sa.catapult.org.uk
