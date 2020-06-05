@@ -12,6 +12,11 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+cronjob:
+  repository: satapps/postgres-backup
+  tag: "sha-319c345"
+  pullPolicy: IfNotPresent
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -86,3 +91,4 @@ awsAccessKeyId: test
 awsSecretAccessKey: test
 s3url: http://s3-uk-1.sa-catapult.co.uk
 s3bucket: csvs-backups
+namespace: dev

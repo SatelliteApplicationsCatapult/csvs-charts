@@ -3,14 +3,15 @@ kind: CronJob
 metadata:
   name: postgres-backup
 spec:
-  schedule: "0 0 * * *"
+  schedule: "* * * * *"
   jobTemplate:
     spec:
       template:
         spec:
           containers:
           - name: postgres-backup
-            image: satapps/postgres-backup:sha-c6536e5
+            image: "{{ .Values.cronjob.repository }}:{{ .Values.cronjob.tag }}"
+            imagePullPolicy: {{ .Values.cronjob.pullPolicy }}
             command: ["sh", "run.sh"]
             env:
                 - name: POSTGRES_HOST
@@ -40,4 +41,6 @@ spec:
                   value: eu-west-1
                 - name: S3_URL
                   value: {{ .Values.s3url }}
+                - name: NAMESPACE
+                  value: {{ .Values.namespace }}
           restartPolicy: OnFailure
