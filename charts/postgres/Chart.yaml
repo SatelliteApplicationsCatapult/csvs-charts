@@ -20,8 +20,8 @@ version: 0.2.0
 # incremented each time you make changes to the application.
 appVersion: 11-alpine
 
-home: satcat
+home: https://github.com/SatelliteApplicationsCatapult/helm-geoserver-postgres
 
 maintainers:
-    - name: davide de lerma
+    - name: SatelliteApplicationsCatapult
       email: davide.delerma@sa.catapult.org.uk
