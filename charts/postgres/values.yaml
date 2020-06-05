@@ -81,4 +81,3 @@ livenessProbe:
 
 postgresqlUsername: geoserver
 postgresqlPassword: supersecret
-s3url: http://s3-uk-1.sa-catapult.co.uk
