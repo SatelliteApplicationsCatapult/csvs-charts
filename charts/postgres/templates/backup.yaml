@@ -27,12 +27,12 @@ spec:
                 - name: S3_ACCESS_KEY_ID
                   valueFrom:
                     secretKeyRef:
-                      name: {{ include "geoserver-chart.fullname" . }}
+                      name: {{ include "postgres.fullname" . }}
                       key: aws-access-key-id
                 - name: S3_SECRET_ACCESS_KEY
                   valueFrom:
                     secretKeyRef:
-                      name: {{ include "geoserver-chart.fullname" . }}
+                      name: {{ include "postgres.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
                   value: {{ .Values.s3bucket }}
