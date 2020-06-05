@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: geoserver-backup
 spec:
-  schedule: "0 0 * * *"
+  schedule: "* * * * *"
   jobTemplate:
     spec:
       template:
@@ -24,7 +24,7 @@ spec:
                       name: {{ include "geoserver-chart.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
-                  value: {{ .Values.global.s3bucket }}
+                  value: {{ .Values.s3bucket }}
                 - name: AWS_DEFAULT_REGION
                   value: eu-west-1
                 - name: GEOSERVER_USERNAME
@@ -38,7 +38,7 @@ spec:
                       name: {{ include "geoserver-chart.fullname" . }}
                       key: geoserver-password
                 - name: S3_URL
-                  value: {{ .Values.global.s3url }}
+                  value: {{ .Values.s3url }}
                 - name: GEOSERVER_URL
                   value: http://geoserver-test-helm-geoserver-postgres:8080
           restartPolicy: OnFailure

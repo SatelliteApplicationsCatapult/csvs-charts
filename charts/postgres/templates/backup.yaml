@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: postgres-backup
 spec:
-  schedule: "0 0 * * *"
+  schedule: "* * * * *"
   jobTemplate:
     spec:
       template:
@@ -35,9 +35,9 @@ spec:
                       name: {{ include "geoserver-chart.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
-                  value: {{ .Values.global.s3bucket }}
+                  value: {{ .Values.s3bucket }}
                 - name: S3_REGION
                   value: eu-west-1
                 - name: S3_URL
-                  value: {{ .Values.global.s3url }}
+                  value: {{ .Values.s3url }}
           restartPolicy: OnFailure
