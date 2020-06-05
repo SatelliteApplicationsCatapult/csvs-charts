@@ -99,6 +99,8 @@ global:
   awsAccessKeyId: test
   awsSecretAccessKey: test
   postgresqlPassword: supersecret
+  s3url: http://s3-uk-1.sa-catapult.co.uk
+  s3bucket: csvs-backups
 
 postgres:
   postgresqlUsername: geoserver

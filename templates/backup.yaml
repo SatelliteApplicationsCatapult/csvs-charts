@@ -24,7 +24,7 @@ spec:
                       name: {{ include "geoserver-chart.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
-                  value: csvs-backups
+                  value: {{ .Values.global.s3bucket }}
                 - name: AWS_DEFAULT_REGION
                   value: eu-west-1
                 - name: GEOSERVER_USERNAME
@@ -38,7 +38,7 @@ spec:
                       name: {{ include "geoserver-chart.fullname" . }}
                       key: geoserver-password
                 - name: S3_URL
-                  value: http://s3-uk-1.sa-catapult.co.uk
+                  value: {{ .Values.global.s3url }}
                 - name: GEOSERVER_URL
                   value: http://geoserver-test-helm-geoserver-postgres:8080
           restartPolicy: OnFailure

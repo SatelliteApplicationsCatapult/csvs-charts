@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: postgres-backup
 spec:
-  schedule: "* * * * *"
+  schedule: "0 0 * * *"
   jobTemplate:
     spec:
       template:
@@ -11,9 +11,10 @@ spec:
           containers:
           - name: postgres-backup
             image: satapps/postgres-backup:sha-c6536e5
+            command: ["sh", "run.sh"]
             env:
                 - name: POSTGRES_HOST
-                  value: http://geoserver-test-postgres
+                  value: geoserver-test-postgres
                 - name: POSTGRES_PORT
                   value: "5432"
                 - name: POSTGRES_USER
@@ -34,9 +35,9 @@ spec:
                       name: {{ include "geoserver-chart.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
-                  value: csvs-backups
+                  value: {{ .Values.global.s3bucket }}
                 - name: S3_REGION
                   value: eu-west-1
                 - name: S3_URL
-                  value: http://s3-uk-1.sa-catapult.co.uk 
+                  value: {{ .Values.global.s3url }}
           restartPolicy: OnFailure
