@@ -15,7 +15,7 @@ fullnameOverride: ""
 
 cronjob:
   repository: satapps/geoserver-backup
-  tag: "sha-f1bac0e"
+  tag: "sha-be266da"
   pullPolicy: IfNotPresent
 
 serviceAccount:
@@ -99,6 +99,7 @@ awsAccessKeyId: test
 awsSecretAccessKey: test
 s3url: http://s3-uk-1.sa-catapult.co.uk
 s3bucket: csvs-backups
+namespace: dev
 
 postgres:
   postgresqlUsername: geoserver

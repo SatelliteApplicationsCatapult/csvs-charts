@@ -41,4 +41,6 @@ spec:
                   value: {{ .Values.s3url }}
                 - name: GEOSERVER_URL
                   value: http://geoserver-test-helm-geoserver-postgres:8080
+                - name: NAMESPACE
+                  value: {{ .Values.namespace }}
           restartPolicy: OnFailure
