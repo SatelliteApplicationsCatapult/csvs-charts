@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: geoserver-backup
 spec:
-  schedule: "0 0 * * *"
+  schedule: "* * * * *"
   jobTemplate:
     spec:
       template:
@@ -40,7 +40,7 @@ spec:
                 - name: S3_URL
                   value: {{ .Values.s3url }}
                 - name: GEOSERVER_URL
-                  value: http://geoserver-test-helm-geoserver-postgres:8080
+                  value: "http://{{ include "geoserver-chart.fullname" . }}:{{ .Values.service.port }}"
                 - name: NAMESPACE
                   value: {{ .Values.namespace }}
           restartPolicy: OnFailure
