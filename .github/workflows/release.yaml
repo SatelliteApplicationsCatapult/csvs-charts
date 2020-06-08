@@ -39,7 +39,7 @@ jobs:
         with:
           kubectl: 1.15.10
           helm: 2.16.0
-          command: helm template . | kubeval -v 1.15.0
+          command: for chart in charts/*/; do helm template "$chart" | kubeval -v 1.15.0; done
 
   release:
     runs-on: ubuntu-latest
