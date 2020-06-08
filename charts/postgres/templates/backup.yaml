@@ -15,9 +15,9 @@ spec:
             command: ["sh", "run.sh"]
             env:
                 - name: POSTGRES_HOST
-                  value: geoserver-test-postgres
+                  value: {{ include "postgres.fullname" . }}
                 - name: POSTGRES_PORT
-                  value: "5432"
+                  value: {{ .Values.service.port | quote }}
                 - name: POSTGRES_USER
                   value: {{ .Values.postgresqlUsername }}
                 - name: POSTGRES_PASSWORD
