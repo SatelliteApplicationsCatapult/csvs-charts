@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: LoadBalancer
-  port: 3009
+  port: 3001
 
 ingress:
   enabled: false
@@ -77,3 +77,32 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+
+clientConfig:
+  initializationUrls: 
+  - terria
+  parameters:
+    googleUrlShortenerKey: null
+    googleAnalyticsKey: null
+    googleAnalyticsOptions: null
+    disclaimer:
+      text: "Disclaimer: This map must not be used for navigation or precise spatial analysis"
+      url: ""
+    appName: "Terria Map"
+    brandBarElements: ["", "<a target=\"_blank\" href=\"http://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>", ""]
+    supportEmail: "help@example.com"
+    proj4ServiceBaseUrl: "proj4def/"
+    feedbackUrl: "feedback"
+    mobileDefaultViewerMode: "2d"
+    experimentalFeatures: true
+    cesiumIonAccessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ODY5M2VjZi01MGE5LTQwMGYtYmU0Ni1kOGIzNWUxYzZlNzQiLCJpZCI6Mjc1ODksInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1ODk3OTIyMjl9.P7XCpfHLYOnfxZqq89HQrLEMbFe6XzVKwBAjrH68GLs"
+
+
+
+
+
+
+    
+
+
