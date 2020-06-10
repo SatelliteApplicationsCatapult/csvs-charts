@@ -2,7 +2,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "geoserver-chart.name" -}}
+{{- define "geoserver.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
@@ -11,7 +11,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "geoserver-chart.fullname" -}}
+{{- define "geoserver.fullname" -}}
 {{- if .Values.fullnameOverride -}}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -27,16 +27,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "geoserver-chart.chart" -}}
+{{- define "geoserver.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
 {{/*
 Common labels
 */}}
-{{- define "geoserver-chart.labels" -}}
-helm.sh/chart: {{ include "geoserver-chart.chart" . }}
-{{ include "geoserver-chart.selectorLabels" . }}
+{{- define "geoserver.labels" -}}
+helm.sh/chart: {{ include "geoserver.chart" . }}
+{{ include "geoserver.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -46,17 +46,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "geoserver-chart.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "geoserver-chart.name" . }}
+{{- define "geoserver.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "geoserver.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "geoserver-chart.serviceAccountName" -}}
+{{- define "geoserver.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create -}}
-    {{ default (include "geoserver-chart.fullname" .) .Values.serviceAccount.name }}
+    {{ default (include "geoserver.fullname" .) .Values.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.serviceAccount.name }}
 {{- end -}}

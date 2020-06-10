@@ -16,12 +16,12 @@ spec:
                 - name: AWS_ACCESS_KEY_ID
                   valueFrom:
                     secretKeyRef:
-                      name: {{ include "geoserver-chart.fullname" . }}
+                      name: {{ include "geoserver.fullname" . }}
                       key: aws-access-key-id
                 - name: AWS_SECRET_ACCESS_KEY
                   valueFrom:
                     secretKeyRef:
-                      name: {{ include "geoserver-chart.fullname" . }}
+                      name: {{ include "geoserver.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
                   value: {{ .Values.s3bucket }}
@@ -30,17 +30,17 @@ spec:
                 - name: GEOSERVER_USERNAME
                   valueFrom:
                     secretKeyRef:
-                      name: {{ include "geoserver-chart.fullname" . }}
+                      name: {{ include "geoserver.fullname" . }}
                       key: geoserver-username
                 - name: GEOSERVER_PASSWORD
                   valueFrom:
                     secretKeyRef:
-                      name: {{ include "geoserver-chart.fullname" . }}
+                      name: {{ include "geoserver.fullname" . }}
                       key: geoserver-password
                 - name: S3_URL
                   value: {{ .Values.s3url }}
                 - name: GEOSERVER_URL
-                  value: "http://{{ include "geoserver-chart.fullname" . }}:{{ .Values.service.port }}"
+                  value: "http://{{ include "geoserver.fullname" . }}:{{ .Values.service.port }}"
                 - name: NAMESPACE
                   value: {{ .Values.namespace }}
           restartPolicy: OnFailure

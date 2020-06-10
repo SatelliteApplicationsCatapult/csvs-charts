@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "geoserver-chart.fullname" . }}
+  name: {{ include "geoserver.fullname" . }}
   labels:
-    {{- include "geoserver-chart.labels" . | nindent 4 }}
+    {{- include "geoserver.labels" . | nindent 4 }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      {{- include "geoserver-chart.selectorLabels" . | nindent 6 }}
+      {{- include "geoserver.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "geoserver-chart.selectorLabels" . | nindent 8 }}
+        {{- include "geoserver.selectorLabels" . | nindent 8 }}
     spec:
       containers:
       - name: {{ .Chart.Name }}
