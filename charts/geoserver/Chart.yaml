@@ -20,7 +20,7 @@ version: 0.1.0
 # incremented each time you make changes to the application.
 appVersion: 0.1
 
-home: https://github.com/SatelliteApplicationsCatapult/helm-geoserver-postgres
+home: http://geoserver.org/
 
 maintainers:
   - name: SatelliteApplicationsCatapult

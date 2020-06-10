@@ -20,7 +20,7 @@ version: 0.2.1
 # incremented each time you make changes to the application.
 appVersion: 11-alpine
 
-home: https://github.com/SatelliteApplicationsCatapult/helm-geoserver-postgres
+home: https://postgis.net/
 
 maintainers:
     - name: SatelliteApplicationsCatapult
