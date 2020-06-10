@@ -6,7 +6,6 @@ replicaCount: 1
 
 image:
   repository: davidedelerma/geoserver
-  tag: "1.1"
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
