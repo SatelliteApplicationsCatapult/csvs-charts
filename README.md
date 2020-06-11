@@ -18,5 +18,5 @@ $ helm repo update
 3. View csvs-charts Helm charts:
 
  ```console
- $ helm search csvs-charts
+ $ helm search repo csvs-charts
  ```
