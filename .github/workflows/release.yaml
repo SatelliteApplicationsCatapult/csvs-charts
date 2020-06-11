@@ -56,6 +56,8 @@ jobs:
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@master
+        with:
+          charts_repo_url: https://SatelliteApplicationsCatapult.github.io/csvs-charts
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
 
@@ -79,6 +81,7 @@ jobs:
           ./helm-docs
           rm helm-docs
 
-      - uses: mikeal/publish-to-github-action@master
+      - uses: juanezm/publish-to-github-action@master
         env:
+          COMMIT_MSG: "Update chart documentation"
           GITHUB_TOKEN: ${{ secrets.CR_TOKEN }}
