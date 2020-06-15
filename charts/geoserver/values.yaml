@@ -83,6 +83,11 @@ pvc:
     namespace: dev-csvs
     name: dev-geoserver-csvs
 
+local:
+  enabled: true
+  storageClassName: manual
+  hostPath: /c/Users/Davide.DeLerma/projects/kube_geoserver_dir/
+
 livenessProbe:
   enabled: true
   initialDelaySeconds: 60

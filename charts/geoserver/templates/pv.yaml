@@ -1,0 +1,17 @@
+{{- if .Values.local.enabled }}
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: geoserverdata
+  labels:
+    type: local
+spec:
+  storageClassName: {{ .Values.local.storageClassName }}
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  hostPath:
+    path: {{ .Values.local.hostPath | quote }}
+{{- end }}
