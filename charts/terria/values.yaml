@@ -84,10 +84,10 @@ affinity: {}
 
 authentication:
   enabled: true
-  # The keys of the secret are the usernames, and the values are hashed passwords (`htpasswd`)
+  # The keys of the secret are the usernames, and the values are hashed passwords
   authData: |
-    foo: $apr1$OFG3Xybp$ckL0FHDAkoXYIlH9.cysT0
-    baz: $apr1$OFG3Xybp$ckL0FHDAkoXYIlH9.cysT0
+    foo: $2y$10$mgU3C0jwc/IY168nIM5i7.Cld/y6NZsi6JLCh84i5RacV7pxwPimK
+    baz: $2y$10$mgU3C0jwc/IY168nIM5i7.Cld/y6NZsi6JLCh84i5RacV7pxwPimK
 
 clientConfig:
   initializationUrls:
