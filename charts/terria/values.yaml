@@ -82,6 +82,12 @@ tolerations: []
 
 affinity: {}
 
+authentication:
+  enabled: true
+  # The keys of the secret are the usernames, and the values are hashed passwords (`htpasswd`)
+  authData: |
+    foo: $apr1$OFG3Xybp$ckL0FHDAkoXYIlH9.cysT0
+    baz: $apr1$OFG3Xybp$ckL0FHDAkoXYIlH9.cysT0
 
 clientConfig:
   initializationUrls:

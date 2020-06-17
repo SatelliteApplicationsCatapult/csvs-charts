@@ -11,10 +11,18 @@ metadata:
   name: {{ $fullName }}
   labels:
     {{- include "terria.labels" . | nindent 4 }}
-  {{- with .Values.ingress.annotations }}
   annotations:
+  {{- with .Values.ingress.annotations }}
     {{- toYaml . | nindent 4 }}
   {{- end }}
+    # type of authentication
+    nginx.ingress.kubernetes.io/auth-type: basic
+    # name of the secret that contains the user/password definitions
+    nginx.ingress.kubernetes.io/auth-secret: {{ include "terria.fullname" . }}
+    # message to display with an appropriate context why the authentication is required
+    nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+    # generate an htpasswd file using all the key-value pairs in the auth-secret
+    nginx.ingress.kubernetes.io/auth-secret-type: auth-map
 spec:
   {{- if .Values.ingress.tls }}
   tls:
