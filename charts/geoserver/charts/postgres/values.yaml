@@ -16,6 +16,7 @@ cronjob:
   repository: satapps/postgres-backup
   tag: "sha-319c345"
   pullPolicy: IfNotPresent
+  ttlSecondsAfterFinished: 3600
 
 serviceAccount:
   # Specifies whether a service account should be created

@@ -2,7 +2,7 @@ geoserver
 =========
 A Helm chart for deploying GeoServer
 
-Current chart version is `0.2.2`
+Current chart version is `0.3.0`
 
 Source code can be found [here](http://geoserver.org/)
 
@@ -18,6 +18,7 @@ Source code can be found [here](http://geoserver.org/)
 | cronjob.pullPolicy | string | `"IfNotPresent"` |  |
 | cronjob.repository | string | `"satapps/geoserver-backup"` |  |
 | cronjob.tag | string | `"sha-be266da"` |  |
+| cronjob.ttlSecondsAfterFinished | int | `3600` |  |
 | fullnameOverride | string | `""` |  |
 | geoserverPassword | string | `"geoserver"` |  |
 | geoserverUsername | string | `"admin"` |  |

@@ -2,7 +2,7 @@ postgres
 ========
 A Helm chart for Kubernetes
 
-Current chart version is `0.2.1`
+Current chart version is `0.2.2`
 
 Source code can be found [here](https://postgis.net/)
 
@@ -18,6 +18,7 @@ Source code can be found [here](https://postgis.net/)
 | cronjob.pullPolicy | string | `"IfNotPresent"` |  |
 | cronjob.repository | string | `"satapps/postgres-backup"` |  |
 | cronjob.tag | string | `"sha-319c345"` |  |
+| cronjob.ttlSecondsAfterFinished | int | `3600` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"mdillon/postgis"` |  |
