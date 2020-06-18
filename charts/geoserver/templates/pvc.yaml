@@ -4,7 +4,11 @@ metadata:
   name: {{ .Values.pvc.remote.name }}
   namespace: {{ .Values.pvc.remote.namespace }}
 spec:
+  {{- if .Values.local.enabled }}
+  storageClassName: {{ .Values.local.storageClassName | quote }}
+  {{- else }}
   storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
+  {{- end }}
   accessModes:
     - ReadWriteOnce
   resources:

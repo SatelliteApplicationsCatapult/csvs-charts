@@ -76,6 +76,9 @@ pvc:
   remote:
     name: dev-postgres-csvs
 
+local:
+  enabled: false
+
 livenessProbe:
   enabled: true
   initialDelaySeconds: 30
