@@ -16,6 +16,7 @@ cronjob:
   repository: satapps/geoserver-backup
   tag: "sha-be266da"
   pullPolicy: IfNotPresent
+  ttlSecondsAfterFinished: 3600
 
 serviceAccount:
   # Specifies whether a service account should be created
