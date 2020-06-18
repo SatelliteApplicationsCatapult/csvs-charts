@@ -4,6 +4,9 @@ metadata:
   name: postgres-backup
 spec:
   schedule: "0 0 * * *"
+{{- with .Values.cronjob.ttlSecondsAfterFinished }}
+  ttlSecondsAfterFinished: {{ . }}
+{{- end }}
   jobTemplate:
     spec:
       template:
