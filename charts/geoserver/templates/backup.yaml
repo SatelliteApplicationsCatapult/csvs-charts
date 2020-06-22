@@ -4,11 +4,11 @@ metadata:
   name: geoserver-backup
 spec:
   schedule: "0 0 * * *"
-{{- with .Values.cronjob.ttlSecondsAfterFinished }}
-  ttlSecondsAfterFinished: {{ . }}
-{{- end }}
   jobTemplate:
     spec:
+{{- with .Values.cronjob.ttlSecondsAfterFinished }}
+      ttlSecondsAfterFinished: {{ . }}
+{{- end }}
       template:
         spec:
           containers:
