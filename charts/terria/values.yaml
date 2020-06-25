@@ -83,11 +83,7 @@ tolerations: []
 affinity: {}
 
 authentication:
-  enabled: true
-  # The keys of the secret are the usernames, and the values are hashed passwords
-  authData: |
-    foo: $2y$10$mgU3C0jwc/IY168nIM5i7.Cld/y6NZsi6JLCh84i5RacV7pxwPimK
-    baz: $2y$10$mgU3C0jwc/IY168nIM5i7.Cld/y6NZsi6JLCh84i5RacV7pxwPimK
+  enabled: false
 
 clientConfig:
   initializationUrls:
