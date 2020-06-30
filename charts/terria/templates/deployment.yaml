@@ -37,7 +37,7 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          command: ["node", "./node_modules/terriajs-server/lib/app.js", "--port", {{ .Values.service.port | quote}}]
+          command: ["echo", '{{ toJson .Values.serverConfig }}', "|", "node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "/dev/stdin"]
           volumeMounts:
             - name: terriamap-config-client
               mountPath: /etc/config/client
