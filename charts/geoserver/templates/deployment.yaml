@@ -21,6 +21,8 @@ spec:
         volumeMounts:
           - mountPath: "/geoserver_data/data"
             name:  {{ .Values.pvc.remote.name }}
+          - mountPath: "/rasters_data"
+            name: {{ .Values.pvc.rasters.name }}
         ports:
         - name: http
           containerPort: {{ .Values.service.port }}
@@ -46,4 +48,7 @@ spec:
         - name: {{ .Values.pvc.remote.name }}
           persistentVolumeClaim:
             claimName: {{ .Values.pvc.remote.name }}
+        - name: {{ .Values.pvc.rasters.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.pvc.rasters.name }}
       

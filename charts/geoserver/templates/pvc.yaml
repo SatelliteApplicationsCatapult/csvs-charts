@@ -14,4 +14,19 @@ spec:
   resources:
     requests:
       storage: 5Gi
+---
+{{- if .Values.pvc.rasters.enabled -}}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Values.pvc.rasters.name }}
+  namespace: {{ .Values.pvc.remote.namespace }}
+spec:
+  storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+{{- end -}}
 

@@ -84,6 +84,9 @@ pvc:
     storageClassName: fast
     namespace: dev-csvs
     name: dev-geoserver-csvs
+  rasters:
+    enabled: false
+    name: dev-geoserver-csvs-rasters
 
 local:
   enabled: false
