@@ -108,3 +108,5 @@ serverConfig:
   port: 3001
   allowProxyFor: [ "dev-csvs.sa-catapult.co.uk" ]
   blacklistedAddresses: []
+  initPaths:
+  - "/etc/config/client"

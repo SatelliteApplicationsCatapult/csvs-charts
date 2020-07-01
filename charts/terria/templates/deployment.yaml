@@ -31,16 +31,21 @@ spec:
         - name: terriamap-config-client
           configMap:
             name: {{ include "terria.fullname" . }}
+        - name: terriamap-config-server
+          configMap:
+            name: {{ printf "%s-%s" .Release.Name "terriamap-config-server" | trunc 63 | trimSuffix "-" | quote }}
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          command: ["echo", '{{ toJson .Values.serverConfig }}', "|", "node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "/dev/stdin"]
+          command: ["node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "/etc/config/server/serverconfig.json"]
           volumeMounts:
             - name: terriamap-config-client
               mountPath: /etc/config/client
+            - name: terriamap-config-server
+              mountPath: /etc/config/server
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
