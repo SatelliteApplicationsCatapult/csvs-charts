@@ -102,7 +102,7 @@ clientConfig:
     feedbackUrl: "feedback"
     mobileDefaultViewerMode: "2d"
     experimentalFeatures: true
-    cesiumIonAccessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ODY5M2VjZi01MGE5LTQwMGYtYmU0Ni1kOGIzNWUxYzZlNzQiLCJpZCI6Mjc1ODksInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1ODk3OTIyMjl9.P7XCpfHLYOnfxZqq89HQrLEMbFe6XzVKwBAjrH68GLs"
+    useCesiumIonTerrain: false
 
 serverConfig:
   port: 3001
