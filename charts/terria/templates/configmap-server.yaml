@@ -5,4 +5,8 @@ metadata:
   labels:
     {{- include "terria.labels" . | nindent 4 }}
 data:
-  serverconfig.json: {{ toJson .Values.serverConfig | indent 2 | quote }}
+  serverconfig.json: |-
+      {
+        "port": {{ .Values.service.port }},
+        "allowProxyFor": ["{{ .Release.Namespace }}-geoserver"]
+      }
