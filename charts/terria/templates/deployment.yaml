@@ -34,6 +34,9 @@ spec:
         - name: terriamap-config-server
           configMap:
             name: {{ printf "%s-%s" .Release.Name "terriamap-config-server" | trunc 63 | trimSuffix "-" | quote }}
+        - name: terriamap-init-config
+          configMap:
+            name: {{ printf "%s-%s" .Release.Name "terriamap-init-config" | trunc 63 | trimSuffix "-" | quote }}
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
@@ -46,6 +49,8 @@ spec:
               mountPath: /etc/config/client
             - name: terriamap-config-server
               mountPath: /etc/config/server
+            - name: terriamap-init-config
+              mountPath: /usr/src/app/wwwroot/init
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
