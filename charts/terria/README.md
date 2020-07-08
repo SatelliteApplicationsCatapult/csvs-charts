@@ -2,7 +2,7 @@ terria
 ======
 A Helm chart for terria map
 
-Current chart version is `0.6.3`
+Current chart version is `0.8.0`
 
 Source code can be found [here](https://terria.io/)
 
@@ -52,6 +52,10 @@ Source code can be found [here](https://terria.io/)
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |
 | securityContext | object | `{}` |  |
+| serverConfig.allowProxyFor[0] | string | `"dev-csvs-geoserver"` |  |
+| serverConfig.blacklistedAddresses | list | `[]` |  |
+| serverConfig.initPaths[0] | string | `"/etc/config/client"` |  |
+| serverConfig.port | int | `3001` |  |
 | service.port | int | `3001` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` |  |

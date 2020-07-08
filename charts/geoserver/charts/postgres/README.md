@@ -2,7 +2,7 @@ postgres
 ========
 A Helm chart for Kubernetes
 
-Current chart version is `0.4.2`
+Current chart version is `0.4.3`
 
 Source code can be found [here](https://postgis.net/)
 
