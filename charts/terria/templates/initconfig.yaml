@@ -1,0 +1,58 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ printf "%s-%s" .Release.Name "terriamap-init-config" | trunc 63 | trimSuffix "-" | quote }}
+  labels:
+    {{- include "terria.labels" . | nindent 4 }}
+data:
+  terria.json: |-
+    {
+        "homeCamera": {
+            "north": -5,
+            "east": 177,
+            "south": -24,
+            "west": 152
+        },
+        "catalog": [
+            {
+                "name": "Solomon",
+                "type": "group",
+                "preserveOrder": true,
+                "isOpen": true,
+                "items": [
+                    {
+                        "name": "Vector",
+                        "type": "wfs-getCapabilities",
+                        "description": "This group contains vector data for Solomon",
+                        "url": "http://{{ .Release.Namespace }}.sa-catapult.co.uk/geoserver/solomon/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+                    },
+                    {
+                        "name": "Rasters",
+                        "type": "wms-getCapabilities",
+                        "description": "This group contains raster data for Solomon",
+                        "url": "http://{{ .Release.Namespace }}.sa-catapult.co.uk/geoserver/solomon_rasters/wms?service=WMS&version=1.3.0&request=GetCapabilities"
+                    }
+                ]
+            },
+            {
+                "name": "Vanuatu",
+                "type": "group",
+                "preserveOrder": true,
+                "isOpen": true,
+                "items": [
+                    {
+                        "name": "Vector",
+                        "type": "wfs-getCapabilities",
+                        "description": "This group contains vector data for Vanuatu",
+                        "url": "http://{{ .Release.Namespace }}.sa-catapult.co.uk/geoserver/vanuatu/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+                    },
+                    {
+                        "name": "Rasters",
+                        "type": "wms-getCapabilities",
+                        "description": "This group contains raster data for Vanuatu",
+                        "url": "http://{{ .Release.Namespace }}.sa-catapult.co.uk/geoserver/vanuatu_rasters/wms?service=WMS&version=1.3.0&request=GetCapabilities"
+                    }
+                ]
+            }
+        ]
+    }
