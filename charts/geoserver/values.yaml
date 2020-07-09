@@ -12,12 +12,6 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-cronjob:
-  repository: satapps/geoserver-backup
-  tag: "sha-be266da"
-  pullPolicy: IfNotPresent
-  ttlSecondsAfterFinished: 3600
-
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -81,6 +75,18 @@ affinity: {}
 
 backup:
   enabled: false
+  repository: satapps/geoserver-backup
+  tag: "sha-be266da"
+  pullPolicy: IfNotPresent
+  ttlSecondsAfterFinished: 3600
+  s3url: http://s3-uk-1.sa-catapult.co.uk
+  s3bucket: csvs-backups
+  namespace: dev
+
+geoserverUsername: admin
+geoserverPassword: geoserver
+awsAccessKeyId: test
+awsSecretAccessKey: test
 
 pvc:
   remote:
@@ -106,14 +112,6 @@ livenessProbe:
 
 readinessProbe:
   enabled: true
-
-geoserverUsername: admin
-geoserverPassword: geoserver
-awsAccessKeyId: test
-awsSecretAccessKey: test
-s3url: http://s3-uk-1.sa-catapult.co.uk
-s3bucket: csvs-backups
-namespace: dev
 
 postgres:
   postgresqlUsername: geoserver

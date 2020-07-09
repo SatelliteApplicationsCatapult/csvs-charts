@@ -7,15 +7,15 @@ spec:
   schedule: "0 0 * * *"
   jobTemplate:
     spec:
-{{- with .Values.cronjob.ttlSecondsAfterFinished }}
+{{- with .Values.backup.ttlSecondsAfterFinished }}
       ttlSecondsAfterFinished: {{ . }}
 {{- end }}
       template:
         spec:
           containers:
           - name: geoserver-backup
-            image: "{{ .Values.cronjob.repository }}:{{ .Values.cronjob.tag }}"
-            imagePullPolicy: {{ .Values.cronjob.pullPolicy }}
+            image: "{{ .Values.backup.repository }}:{{ .Values.backup.tag }}"
+            imagePullPolicy: {{ .Values.backup.pullPolicy }}
             env:
                 - name: AWS_ACCESS_KEY_ID
                   valueFrom:
@@ -28,7 +28,7 @@ spec:
                       name: {{ include "geoserver.fullname" . }}
                       key: aws-secret-access-key
                 - name: S3_BUCKET
-                  value: {{ .Values.s3bucket }}
+                  value: {{ .Values.backup.s3bucket }}
                 - name: AWS_DEFAULT_REGION
                   value: eu-west-1
                 - name: GEOSERVER_USERNAME
@@ -42,10 +42,10 @@ spec:
                       name: {{ include "geoserver.fullname" . }}
                       key: geoserver-password
                 - name: S3_URL
-                  value: {{ .Values.s3url }}
+                  value: {{ .Values.backup.s3url }}
                 - name: GEOSERVER_URL
                   value: "http://{{ include "geoserver.fullname" . }}:{{ .Values.service.port }}"
                 - name: NAMESPACE
-                  value: {{ .Values.namespace }}
+                  value: {{ .Values.backup.namespace }}
           restartPolicy: OnFailure
 {{- end -}}
