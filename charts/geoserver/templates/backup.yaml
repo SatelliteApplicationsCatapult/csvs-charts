@@ -1,3 +1,4 @@
+{{- if .Values.backup.enabled -}}
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
@@ -47,3 +48,4 @@ spec:
                 - name: NAMESPACE
                   value: {{ .Values.namespace }}
           restartPolicy: OnFailure
+{{- end -}}

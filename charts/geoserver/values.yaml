@@ -79,6 +79,9 @@ tolerations: []
 
 affinity: {}
 
+backup:
+  enabled: false
+  
 pvc:
   remote:
     storageClassName: fast
