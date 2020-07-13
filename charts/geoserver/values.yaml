@@ -81,7 +81,7 @@ backup:
   ttlSecondsAfterFinished: 3600
   s3url: http://s3-uk-1.sa-catapult.co.uk
   s3bucket: csvs-backups
-  namespace: dev
+  namespace: dev-csvs
 
 geoserverUsername: admin
 geoserverPassword: geoserver
@@ -92,10 +92,10 @@ pvc:
   remote:
     storageClassName: fast
     namespace: dev-csvs
-    name: dev-geoserver-csvs
+    name: geoserver
   rasters:
     enabled: false
-    name: dev-geoserver-csvs-rasters
+    name: geoserver-rasters
 
 local:
   enabled: false
@@ -120,4 +120,4 @@ postgres:
   awsSecretAccessKey: test
   s3url: http://s3-uk-1.sa-catapult.co.uk
   s3bucket: csvs-backups
-  namespace: dev
+  namespace: dev-csvs

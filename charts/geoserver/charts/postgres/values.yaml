@@ -75,7 +75,7 @@ affinity: {}
 
 pvc:
   remote:
-    name: dev-postgres-csvs
+    name: postgres
 
 local:
   enabled: false
@@ -95,4 +95,4 @@ awsAccessKeyId: test
 awsSecretAccessKey: test
 s3url: http://s3-uk-1.sa-catapult.co.uk
 s3bucket: csvs-backups
-namespace: dev
+namespace: dev-csvs
