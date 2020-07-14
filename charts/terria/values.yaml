@@ -51,7 +51,7 @@ ingress:
   hosts:
     - host: dev-csvs.sa-catapult.co.uk
       paths:
-        - path: /terria/(.*)
+        - path: /terria-solomon/(.*)
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
