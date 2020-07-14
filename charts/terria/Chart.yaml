@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 name: terria
 description: A Helm chart for terria map
 
