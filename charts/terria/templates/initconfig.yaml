@@ -14,13 +14,13 @@ data:
             "west": {{ default 152 .Values.initConfig.homeCamera.west }}
         },
         "catalog": [
-            {{- $lenCatalog := len .Values.initConfig.geoserverWorkspaces -}}
-            {{- range  $i, $e := .Values.initConfig.geoserverWorkspaces }}
+            {{- $lenCatalog := len .Values.initConfig.catalog -}}
+            {{- range  $i, $e := .Values.initConfig.catalog }}
             {
-                "name": "DRR",
-                "type": "wfs-getCapabilities",
-                "description": "This group contains vector data for Solomon",
-                "url": "http://{{ $.Release.Namespace }}-geoserver:8080/geoserver/{{ . }}/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+                "name": {{ $e.groupName | quote }},
+                "type": {{ $e.groupType | quote }},
+                "description":{{ $e.groupDescription | quote }},
+                "url": "http://{{ $.Release.Namespace }}-geoserver:8080/geoserver/{{ $e.geoserverWorkspace }}/ows?service=wfs&version=2.0.0&request=GetCapabilities"
             }{{- if ne $i (sub $lenCatalog 1) -}},{{- end -}}
             {{- end }}
         ]
