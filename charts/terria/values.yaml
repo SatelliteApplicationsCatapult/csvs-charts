@@ -111,14 +111,14 @@ initConfig:
     south: -24
     west: 152
   catalog:
-    - groupName: DRR
-      groupType: wfs-getCapabilities
-      groupDescription: "This group contains DRR vector data for Solomon Island"
-      geoserverWorkspace: solomon
-    - groupName: "Hazard data"
-      groupType: wms-getCapabilities
-      groupDescription: "This group contains maps of Hazard for Solomon Island"
-      geoserverWorkspace: solomon_rasters
+  - groupName: DRR
+    groupType: wfs-getCapabilities
+    groupDescription: "This group contains DRR vector data for Solomon Island"
+    geoserverWorkspace: solomon
+  - groupName: "Hazard data"
+    groupType: wms-getCapabilities
+    groupDescription: "This group contains maps of Hazard for Solomon Island"
+    geoserverWorkspace: solomon_rasters
 
 
 geoserverCredentials: "admin:geoserver"
