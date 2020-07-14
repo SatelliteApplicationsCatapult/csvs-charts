@@ -110,7 +110,7 @@ initConfig:
     east: 177
     south: -24
     west: 152
-  catalog: 
+  catalog:
     - groupName: DRR
       groupType: wfs-getCapabilities
       groupDescription: "This group contains DRR vector data for Solomon Island"
