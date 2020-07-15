@@ -120,5 +120,6 @@ initConfig:
     groupDescription: "This group contains maps of Hazard for Solomon Island"
     geoserverWorkspace: solomon_rasters
 
-
-geoserverCredentials: "admin:geoserver"
+serverConfig:
+  geoserverBaseUrl: geoserver:8080  
+  geoserverCredentials: "admin:geoserver"

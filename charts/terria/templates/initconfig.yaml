@@ -20,7 +20,7 @@ data:
                 "name": {{ $e.groupName | quote }},
                 "type": {{ $e.groupType | quote }},
                 "description":{{ $e.groupDescription | quote }},
-                "url": "http://{{ $.Release.Namespace }}-geoserver:8080/geoserver/{{ $e.geoserverWorkspace }}/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+                "url": "http://{{ $.Values.serverConfig.geoserverBaseUrl }}/geoserver/{{ $e.geoserverWorkspace }}/ows?service=wfs&version=2.0.0&request=GetCapabilities"
             }{{- if ne $i (sub $lenCatalog 1) -}},{{- end -}}
             {{- end }}
         ]
