@@ -83,8 +83,8 @@ backup:
   s3bucket: csvs-backups
   namespace: dev-csvs
 
-geoserverUsername: admin
-geoserverPassword: geoserver
+geoserverUsername: test_user
+geoserverPassword: test_password
 awsAccessKeyId: test
 awsSecretAccessKey: test
 

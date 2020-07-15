@@ -125,4 +125,4 @@ initConfig:
 
 serverConfig:
   geoserverBaseUrl: geoserver:8080
-  geoserverCredentials: "admin:geoserver"
+  geoserverCredentials: "test_user:test_password"
