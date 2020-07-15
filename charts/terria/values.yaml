@@ -103,6 +103,7 @@ clientConfig:
     mobileDefaultViewerMode: "2d"
     experimentalFeatures: true
     useCesiumIonTerrain: false
+    useCesiumIonBingImagery: false
 
 initConfig:
   homeCamera:
@@ -110,6 +111,8 @@ initConfig:
     east: 177
     south: -24
     west: 152
+  viewMode: "2d"
+  baseMapName: "Positron (Light)"
   catalog:
   - groupName: DRR
     groupType: wfs-getCapabilities
