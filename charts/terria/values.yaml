@@ -121,5 +121,5 @@ initConfig:
     geoserverWorkspace: solomon_rasters
 
 serverConfig:
-  geoserverBaseUrl: geoserver:8080  
+  geoserverBaseUrl: geoserver:8080
   geoserverCredentials: "admin:geoserver"
