@@ -73,6 +73,12 @@ tolerations: []
 
 affinity: {}
 
+sidecar:
+  image:
+    repository: davidedelerma/geoserver-commands
+    tag: 0.4
+    pullPolicy: IfNotPresent
+
 backup:
   enabled: false
   repository: satapps/geoserver-backup

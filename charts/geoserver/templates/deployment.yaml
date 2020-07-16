@@ -15,6 +15,25 @@ spec:
         {{- include "geoserver.selectorLabels" . | nindent 8 }}
     spec:
       containers:
+      - name: {{ .Chart.Name }}-sidecar
+        image: "{{ .Values.sidecar.image.repository }}:{{ .Values.sidecar.image.tag }}"
+        imagePullPolicy: {{ .Values.sidecar.image.pullPolicy }}
+        volumeMounts:
+        {{- if .Values.pvc.rasters.enabled }}
+          - mountPath: "/rasters_data"
+            name: {{ .Values.pvc.rasters.name }}
+        {{- end }}
+        env:
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "geoserver.fullname" . }}
+              key: aws-access-key-id
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "geoserver.fullname" . }}
+              key: aws-secret-access-key
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
