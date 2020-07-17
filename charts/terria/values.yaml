@@ -111,17 +111,22 @@ initConfig:
     east: 177
     south: -24
     west: 152
-  viewMode: "2d"
+  viewMode: 2d
   baseMapName: "Positron (Light)"
   catalog:
-  - groupName: DRR
-    groupType: wfs-getCapabilities
-    groupDescription: "This group contains DRR vector data for Solomon Island"
-    geoserverWorkspace: solomon
-  - groupName: "Hazard data"
-    groupType: wms-getCapabilities
-    groupDescription: "This group contains maps of Hazard for Solomon Island"
+  - name: DRR
+    type: wfs-getCapabilities
+    description: "This group contains DRR vector data for Solomon Island"
+    url: "http://geoserver:8080/geoserver/solomon/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+  - name: "Hazard data"
+    type: wms-getCapabilities
+    description: "This group contains maps of Hazard for Solomon Island"
     geoserverWorkspace: solomon_rasters
+    url: "http://geoserver:8080/geoserver/solomon_rasters/wms?service=WMS&version=1.3.0&request=GetCapabilities"
+  - name: "DEMs"
+    type: wms-getCapabilities
+    description: "This group contains DEMs for Solomon Island provided by University of Portsmouth"
+    url: "http://geoserver:8080/geoserver/solomon_dems/wms?service=WMS&version=1.3.0&request=GetCapabilities"
 
 serverConfig:
   geoserverBaseUrl: geoserver:8080

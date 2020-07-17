@@ -5,26 +5,6 @@ metadata:
   labels:
     {{- include "terria.labels" . | nindent 4 }}
 data:
-  terria.json: |-
-    {
-        "homeCamera": {
-            "north": {{ default 5 .Values.initConfig.homeCamera.north }},
-            "east": {{ default 177 .Values.initConfig.homeCamera.east }},
-            "south": {{ default -24 .Values.initConfig.homeCamera.south }},
-            "west": {{ default 152 .Values.initConfig.homeCamera.west }}
-        },
-        "viewerMode": {{ .Values.initConfig.viewMode | quote }},
-        "baseMapName": {{ .Values.initConfig.baseMapName | quote }},
-        "catalog": [
-            {{- $lenCatalog := len .Values.initConfig.catalog -}}
-            {{- range  $i, $e := .Values.initConfig.catalog }}
-            {
-                "name": {{ $e.groupName | quote }},
-                "type": {{ $e.groupType | quote }},
-                "description":{{ $e.groupDescription | quote }},
-                "url": "http://{{ $.Values.serverConfig.geoserverBaseUrl }}/geoserver/{{ $e.geoserverWorkspace }}/ows?service=wfs&version=2.0.0&request=GetCapabilities"
-            }{{- if ne $i (sub $lenCatalog 1) -}},{{- end -}}
-            {{- end }}
-        ]
-    }
+  terria.json: '{{ toJson .Values.initConfig | indent 2 }}'
+
 
