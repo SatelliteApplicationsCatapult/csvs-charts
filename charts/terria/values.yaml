@@ -111,7 +111,7 @@ initConfig:
     east: 177
     south: -24
     west: 152
-  viewMode: 2d
+  viewerMode: 2d
   baseMapName: "Positron (Light)"
   catalog:
   - name: DRR
