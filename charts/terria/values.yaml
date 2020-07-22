@@ -96,7 +96,7 @@ clientConfig:
       text: "Disclaimer: This map must not be used for navigation or precise spatial analysis"
       url: ""
     appName: "Terria Map"
-    brandBarElements: ["", "<a target=\"_blank\" href=\"http://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>", ""]
+    brandBarElements: ["", "<a target=\"_blank\" href=\"http://terria.io\"><img src=\"images/SI_high.png\" height=\"52\" title=\"Version: {{version}}\" /></a>", ""]
     supportEmail: "help@example.com"
     proj4ServiceBaseUrl: "proj4def/"
     feedbackUrl: "feedback"
