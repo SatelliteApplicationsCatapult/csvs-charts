@@ -122,6 +122,16 @@ livenessProbe:
 readinessProbe:
   enabled: true
 
+## Role Based Access for a ServiceAccount
+## ref: https://kubernetes.io/docs/admin/authorization/rbac/
+##
+rbac:
+  ## Specifies whether RBAC rules should be created
+  ## binding GeoServer ServiceAccount to a role
+  ## that allows GeoServer pods querying the K8s API
+  ##
+  create: true
+
 postgres:
   postgresqlUsername: geoserver
   postgresqlPassword: supersecret
