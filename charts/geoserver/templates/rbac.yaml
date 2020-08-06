@@ -21,7 +21,8 @@ metadata:
   labels: {{- include "geoserver.labels" . | nindent 4 }}
 subjects:
   - kind: ServiceAccount
-    name: {{ template "geoserver.fullname" . }}
+    name: default
+    namespace: default
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
