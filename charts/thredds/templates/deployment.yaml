@@ -27,33 +27,48 @@ spec:
       serviceAccountName: {{ include "thredds.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      initContainers:
+      - name: init-{{ .Chart.Name }}
+        image: "davidedelerma/init-thredds:0.2"
+        volumeMounts:
+        - name: {{ .Values.pvc.name }}
+          mountPath: "/thredds-content"
+        command: ["mv", "thredds", "thredds-content"]
+      volumes:
+          - name: {{ .Values.pvc.name }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.pvc.name }}
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+          - mountPath: "/usr/local/tomcat/content"
+            name:  {{ .Values.pvc.name }}
+            
           ports:
             - name: liveness-port
-              containerPort: 8080
-              hostPort: 8080
+              containerPort: {{ .Values.service.port }}
+              hostPort: {{ .Values.service.port }}
 
           livenessProbe:
             httpGet:
               path: /thredds/catalog/catalog.html
               port: liveness-port
-            initialDelaySeconds: 120
+            initialDelaySeconds: 30
             timeoutSeconds: 3
-            periodSeconds: 30
+            periodSeconds: 10
             successThreshold: 1
             failureThreshold: 5
           readinessProbe:
             httpGet:
               path: /thredds/catalog/catalog.html
               port: liveness-port
-            initialDelaySeconds: 120
+            initialDelaySeconds: 30
             timeoutSeconds: 3
-            periodSeconds: 30
+            periodSeconds: 10
             successThreshold: 1
             failureThreshold: 5
           resources:
