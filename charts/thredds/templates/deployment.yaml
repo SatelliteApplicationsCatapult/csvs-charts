@@ -33,20 +33,29 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          - name: TDS_CONTENT_ROOT_PATH
-            value: "/content"
           ports:
-            - name: http
-              containerPort: 80
-              protocol: TCP
+            - name: liveness-port
+              containerPort: 8080
+              hostPort: 8080
+
           livenessProbe:
             httpGet:
-              path: /
-              port: http
+              path: /thredds/catalog/catalog.html
+              port: liveness-port
+            initialDelaySeconds: 120
+            timeoutSeconds: 3
+            periodSeconds: 30
+            successThreshold: 1
+            failureThreshold: 5
           readinessProbe:
             httpGet:
-              path: /
-              port: http
+              path: /thredds/catalog/catalog.html
+              port: liveness-port
+            initialDelaySeconds: 120
+            timeoutSeconds: 3
+            periodSeconds: 30
+            successThreshold: 1
+            failureThreshold: 5
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
