@@ -5,14 +5,4 @@ metadata:
   labels:
     {{- include "terria.labels" . | nindent 4 }}
 data:
-  serverconfig.json: |-
-      {
-        "port": {{ .Values.service.port }},
-        "allowProxyFor": [{{ .Values.serverConfig.geoserverBaseUrl | quote }}],
-        "blacklistedAddresses": [],
-        "proxyAuth": {
-          {{ .Values.serverConfig.geoserverBaseUrl | quote }}: {
-              "authorization": "Basic {{ .Values.serverConfig.geoserverCredentials | b64enc }}"
-          }
-        }
-      }
+  serverconfig.json: '{{ toJson .Values.serverConfig | indent 2 }}'
