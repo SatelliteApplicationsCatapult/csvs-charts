@@ -21,3 +21,9 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: 4.6.15
+
+home: https://www.unidata.ucar.edu/software/tds/
+
+maintainers:
+  - name: SatelliteApplicationsCatapult
+    email: davide.delerma@sa.catapult.org.uk
