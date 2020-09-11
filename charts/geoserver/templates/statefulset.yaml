@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ include "geoserver.fullname" . }}
   labels:
@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       {{- include "geoserver.selectorLabels" . | nindent 6 }}
+  serviceName: "geoserver"
   template:
     metadata:
       labels:
@@ -75,18 +76,41 @@ spec:
             path: /geoserver/index.html
             port: http
         {{- end }}
-      volumes:
-        - name: {{ .Values.pvc.remote.name }}
-          persistentVolumeClaim:
-            claimName: {{ .Values.pvc.remote.name }}
-        {{- if .Values.pvc.rasters.enabled }}
-        - name: {{ .Values.pvc.rasters.name }}
-          persistentVolumeClaim:
-            claimName: {{ .Values.pvc.rasters.name }}
+  volumeClaimTemplates:
+    - metadata:
+        name: {{ .Values.pvc.remote.name }}
+      spec:
+        storageClassName: {{ .Values.pvc.remote.storageClassName }}
+        {{- if .Values.local.enabled }}
+        storageClassName: {{ .Values.local.storageClassName | quote }}
+        {{- else }}
+        storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
         {{- end }}
-        {{- if .Values.pvc.netcdf.enabled }}
-        - name: {{ .Values.pvc.netcdf.name }}
-          persistentVolumeClaim:
-            claimName: {{ .Values.pvc.netcdf.name }}
-        {{- end }}
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 5Gi
+    {{- if .Values.pvc.rasters.enabled }}
+    - metadata:
+        name: {{ .Values.pvc.rasters.name }}
+      spec:
+        storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 5Gi
+    {{- end }}
+    {{- if .Values.pvc.netcdf.enabled }}
+    - metadata:
+        name: {{ .Values.pvc.netcdf.name }}
+      spec:
+        storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 500Gi
+    {{- end }}
 
