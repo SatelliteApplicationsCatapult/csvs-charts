@@ -14,10 +14,17 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+sidecar:
+  image:
+    repository: satapps/geoserver-commands
+    tag: 0.7
+    pullPolicy: IfNotPresent
+
 pvc:
   storageClassName: fast
   namespace: dev-csvs
   name: thredds
+  netcdfName: climate-data
 
 serviceAccount:
   # Specifies whether a service account should be created

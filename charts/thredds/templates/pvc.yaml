@@ -10,3 +10,16 @@ spec:
   resources:
     requests:
       storage: 5Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Values.pvc.netcdfName }}
+  namespace: {{ .Values.pvc.namespace }}
+spec:
+  storageClassName: {{ .Values.pvc.storageClassName | quote }}
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi

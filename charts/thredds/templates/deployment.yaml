@@ -29,7 +29,7 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       initContainers:
       - name: init-{{ .Chart.Name }}
-        image: "davidedelerma/init-thredds:0.2"
+        image: "davidedelerma/init-thredds:0.3"
         volumeMounts:
         - name: {{ .Values.pvc.name }}
           mountPath: "/thredds-content"
@@ -38,7 +38,21 @@ spec:
           - name: {{ .Values.pvc.name }}
             persistentVolumeClaim:
               claimName: {{ .Values.pvc.name }}
+          - name: {{ .Values.pvc.netcdfName }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.pvc.netcdfName }}
       containers:
+        - name: {{ .Chart.Name }}-sidecar
+          image: "{{ .Values.sidecar.image.repository }}:{{ .Values.sidecar.image.tag }}"
+          imagePullPolicy: {{ .Values.sidecar.image.pullPolicy }}
+          volumeMounts:
+          - mountPath: "/usr/local/data"
+            name:  {{ .Values.pvc.netcdfName }}
+          env:
+          - name: AWS_ACCESS_KEY_ID
+            value : 307282071fcfef61a70d
+          - name: AWS_SECRET_ACCESS_KEY
+            value: y+w07ahZjvaaF6TNy8uhr82xj2ksy7nLhknTmIGW
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
@@ -47,7 +61,8 @@ spec:
           volumeMounts:
           - mountPath: "/usr/local/tomcat/content"
             name:  {{ .Values.pvc.name }}
-            
+          - mountPath: "/usr/local/data"
+            name:  {{ .Values.pvc.netcdfName }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}
