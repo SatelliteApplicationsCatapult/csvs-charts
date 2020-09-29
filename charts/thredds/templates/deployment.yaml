@@ -31,23 +31,33 @@ spec:
       - name: init-{{ .Chart.Name }}
         image: "davidedelerma/init-thredds:0.3"
         volumeMounts:
-        - name: {{ .Values.pvc.name }}
+        - name: {{ .Values.pvc.configuration.name }}
           mountPath: "/thredds-content"
         command: ["mv", "thredds", "thredds-content"]
       volumes:
-          - name: {{ .Values.pvc.name }}
+          - name: {{ .Values.pvc.configuration.name }}
             persistentVolumeClaim:
-              claimName: {{ .Values.pvc.name }}
-          - name: {{ .Values.pvc.netcdfName }}
+              claimName: {{ .Values.pvc.configuration.name }}
+          - name: {{ .Values.pvc.netcdfMontlyYearly.name }}
             persistentVolumeClaim:
-              claimName: {{ .Values.pvc.netcdfName }}
+              claimName: {{ .Values.pvc.netcdfMontlyYearly.name }}
+          - name: {{ .Values.pvc.netcdfDaily1.name }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.pvc.netcdfDaily1.name }}
+          - name: {{ .Values.pvc.netcdfDaily2.name }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.pvc.netcdfDaily2.name }}
       containers:
         - name: {{ .Chart.Name }}-sidecar
           image: "{{ .Values.sidecar.image.repository }}:{{ .Values.sidecar.image.tag }}"
           imagePullPolicy: {{ .Values.sidecar.image.pullPolicy }}
           volumeMounts:
-          - mountPath: "/usr/local/data"
-            name:  {{ .Values.pvc.netcdfName }}
+          - mountPath: "/usr/local/monthly-yearly-data"
+            name:  {{ .Values.pvc.netcdfMontlyYearly.name }}
+          - mountPath: "/usr/local/daily-1-data"
+            name:  {{ .Values.pvc.netcdfDaily1.name }}
+          - mountPath: "/usr/local/daily-2-data"
+            name:  {{ .Values.pvc.netcdfDaily2.name }}
           env:
           - name: AWS_ACCESS_KEY_ID
             value : 307282071fcfef61a70d
@@ -60,9 +70,13 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           - mountPath: "/usr/local/tomcat/content"
-            name:  {{ .Values.pvc.name }}
-          - mountPath: "/usr/local/data"
-            name:  {{ .Values.pvc.netcdfName }}
+            name:  {{ .Values.pvc.configuration.name }}
+          - mountPath: "/usr/local/monthly-yearly-data"
+            name:  {{ .Values.pvc.netcdfMontlyYearly.name }}
+          - mountPath: "/usr/local/daily-1-data"
+            name:  {{ .Values.pvc.netcdfDaily1.name }}
+          - mountPath: "/usr/local/daily-2-data"
+            name:  {{ .Values.pvc.netcdfDaily2.name }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}

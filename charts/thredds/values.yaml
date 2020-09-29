@@ -21,10 +21,25 @@ sidecar:
     pullPolicy: IfNotPresent
 
 pvc:
-  storageClassName: fast
-  namespace: dev-csvs
-  name: thredds
-  netcdfName: climate-data
+  configuration:
+    storageClassName: fast
+    namespace: dev-csvs
+    name: thredds
+  netcdfMontlyYearly:
+    name: era5-data-monthly-yearly
+    namespace: dev-csvs
+    storageClassName: fast
+  netcdfDaily1:
+    name: era5-data-daily-part-1
+    namespace: dev-csvs
+    storageClassName: fast
+  netcdfDaily2:
+    name: era5-data-daily-part-2
+    namespace: dev-csvs
+    storageClassName: fast
+  
+    
+  
 
 serviceAccount:
   # Specifies whether a service account should be created
