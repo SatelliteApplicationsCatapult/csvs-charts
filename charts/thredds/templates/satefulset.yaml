@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ include "thredds.fullname" . }}
   labels:
@@ -11,6 +11,53 @@ spec:
   selector:
     matchLabels:
       {{- include "thredds.selectorLabels" . | nindent 6 }}
+  serviceName: "thredds"
+  volumeClaimTemplates:
+          - metadata:
+             name: {{ .Values.pvc.configuration.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.configuration.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 5Gi
+          - metadata: 
+              name: {{ .Values.pvc.netcdfMontlyYearly.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.netcdfMontlyYearly.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 200Gi
+          - metadata: 
+              name: {{ .Values.pvc.netcdfDaily1.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.netcdfDaily1.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 200Gi
+          - metadata: 
+              name: {{ .Values.pvc.netcdfDaily2.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.netcdfDaily2.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 200Gi
+          - metadata: 
+              name: {{ .Values.pvc.netcdfDaily3.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.netcdfDaily2.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 200Gi
   template:
     metadata:
     {{- with .Values.podAnnotations }}
@@ -34,22 +81,6 @@ spec:
         - name: {{ .Values.pvc.configuration.name }}
           mountPath: "/thredds-content"
         command: ["mv", "thredds", "thredds-content"]
-      volumes:
-          - name: {{ .Values.pvc.configuration.name }}
-            persistentVolumeClaim:
-              claimName: {{ .Values.pvc.configuration.name }}
-          - name: {{ .Values.pvc.netcdfMontlyYearly.name }}
-            persistentVolumeClaim:
-              claimName: {{ .Values.pvc.netcdfMontlyYearly.name }}
-          - name: {{ .Values.pvc.netcdfDaily1.name }}
-            persistentVolumeClaim:
-              claimName: {{ .Values.pvc.netcdfDaily1.name }}
-          - name: {{ .Values.pvc.netcdfDaily2.name }}
-            persistentVolumeClaim:
-              claimName: {{ .Values.pvc.netcdfDaily2.name }}
-          - name: {{ .Values.pvc.netcdfDaily3.name }}
-            persistentVolumeClaim:
-              claimName: {{ .Values.pvc.netcdfDaily3.name }}
       containers:
         - name: {{ .Chart.Name }}-sidecar
           image: "{{ .Values.sidecar.image.repository }}:{{ .Values.sidecar.image.tag }}"
