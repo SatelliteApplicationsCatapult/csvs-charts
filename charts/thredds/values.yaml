@@ -37,6 +37,10 @@ pvc:
     name: era5-data-daily-part-2
     namespace: dev-csvs
     storageClassName: fast
+  netcdfDaily3:
+    name: era5-data-daily-part-3
+    namespace: dev-csvs
+    storageClassName: fast
 
 serviceAccount:
   # Specifies whether a service account should be created
