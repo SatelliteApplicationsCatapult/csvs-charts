@@ -47,6 +47,9 @@ spec:
           - name: {{ .Values.pvc.netcdfDaily2.name }}
             persistentVolumeClaim:
               claimName: {{ .Values.pvc.netcdfDaily2.name }}
+          - name: {{ .Values.pvc.netcdfDaily3.name }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.pvc.netcdfDaily3.name }}
       containers:
         - name: {{ .Chart.Name }}-sidecar
           image: "{{ .Values.sidecar.image.repository }}:{{ .Values.sidecar.image.tag }}"
@@ -58,6 +61,8 @@ spec:
             name:  {{ .Values.pvc.netcdfDaily1.name }}
           - mountPath: "/usr/local/daily-2-data"
             name:  {{ .Values.pvc.netcdfDaily2.name }}
+          - mountPath: "/usr/local/daily-3-data"
+            name:  {{ .Values.pvc.netcdfDaily3.name }}
           env:
           - name: AWS_ACCESS_KEY_ID
             valueFrom:
@@ -83,6 +88,8 @@ spec:
             name:  {{ .Values.pvc.netcdfDaily1.name }}
           - mountPath: "/usr/local/daily-2-data"
             name:  {{ .Values.pvc.netcdfDaily2.name }}
+          - mountPath: "/usr/local/daily-3-data"
+            name:  {{ .Values.pvc.netcdfDaily3.name }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}
