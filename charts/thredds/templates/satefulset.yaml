@@ -76,7 +76,7 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       initContainers:
       - name: init-{{ .Chart.Name }}
-        image: "davidedelerma/init-thredds:0.3"
+        image: "davidedelerma/init-thredds:0.8"
         volumeMounts:
         - name: {{ .Values.pvc.configuration.name }}
           mountPath: "/thredds-content"
