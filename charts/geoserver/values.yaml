@@ -102,9 +102,6 @@ pvc:
   rasters:
     enabled: false
     name: geoserver-rasters
-  netcdf:
-    enabled: false
-    name: geoserver-netcdf
 
 local:
   enabled: false

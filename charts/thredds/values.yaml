@@ -16,9 +16,10 @@ fullnameOverride: ""
 
 sidecar:
   image:
-    repository: satapps/geoserver-commands
+    repository: satapps/csvs-thredds-sidecar
     tag: 0.7
     pullPolicy: IfNotPresent
+  awsConcurrentRequests: 1
 
 pvc:
   configuration:
@@ -107,7 +108,7 @@ tolerations: []
 affinity: {}
 
 livenessProbe:
-  enabled: true
+  enabled: false
   initialDelaySeconds: 15
   periodSeconds: 10
   timeoutSeconds: 5
@@ -115,7 +116,7 @@ livenessProbe:
   successThreshold: 1
 
 readinessProbe:
-  enabled: true
+  enabled: false
   initialDelaySeconds: 15
   periodSeconds: 10
   timeoutSeconds: 5

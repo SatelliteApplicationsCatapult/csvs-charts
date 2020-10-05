@@ -26,10 +26,6 @@ spec:
           - mountPath: "/rasters_data"
             name: {{ .Values.pvc.rasters.name }}
         {{- end }}
-        {{- if .Values.pvc.netcdf.enabled }}
-          - mountPath: "/netcdf_data"
-            name: {{ .Values.pvc.netcdf.name }}
-        {{- end }}
         env:
         - name: AWS_ACCESS_KEY_ID
           valueFrom:
@@ -50,10 +46,6 @@ spec:
           {{- if .Values.pvc.rasters.enabled }}
           - mountPath: "/rasters_data"
             name: {{ .Values.pvc.rasters.name }}
-          {{- end }}
-          {{- if .Values.pvc.netcdf.enabled }}
-          - mountPath: "/netcdf_data"
-            name: {{ .Values.pvc.netcdf.name }}
           {{- end }}
         ports:
         - name: http
@@ -101,16 +93,5 @@ spec:
         resources:
           requests:
             storage: 5Gi
-    {{- end }}
-    {{- if .Values.pvc.netcdf.enabled }}
-    - metadata:
-        name: {{ .Values.pvc.netcdf.name }}
-      spec:
-        storageClassName: {{ .Values.pvc.remote.storageClassName | quote }}
-        accessModes:
-          - ReadWriteOnce
-        resources:
-          requests:
-            storage: 500Gi
     {{- end }}
 

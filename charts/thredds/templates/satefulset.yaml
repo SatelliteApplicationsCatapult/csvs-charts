@@ -80,11 +80,12 @@ spec:
         volumeMounts:
         - name: {{ .Values.pvc.configuration.name }}
           mountPath: "/thredds-content"
-        command: ["mv", "thredds", "thredds-content"]
+        command: ["cp", "-r", "thredds", "thredds-content"]
       containers:
         - name: {{ .Chart.Name }}-sidecar
           image: "{{ .Values.sidecar.image.repository }}:{{ .Values.sidecar.image.tag }}"
           imagePullPolicy: {{ .Values.sidecar.image.pullPolicy }}
+          command: ["tail", "-f", "/dev/null"]
           volumeMounts:
           - mountPath: "/usr/local/monthly-yearly-data"
             name:  {{ .Values.pvc.netcdfMontlyYearly.name }}
@@ -95,6 +96,8 @@ spec:
           - mountPath: "/usr/local/daily-3-data"
             name:  {{ .Values.pvc.netcdfDaily3.name }}
           env:
+          - name: CONCURRENT_REQUESTS
+            value: {{ .Values.sidecar.awsConcurrentRequests | quote }}
           - name: AWS_ACCESS_KEY_ID
             valueFrom:
               secretKeyRef:
