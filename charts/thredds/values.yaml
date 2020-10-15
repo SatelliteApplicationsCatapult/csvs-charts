@@ -4,6 +4,10 @@
 
 replicaCount: 1
 
+initImage:
+  repository: davidedelerma/init-thredds
+  tag: c6a5985
+
 image:
   repository: unidata/thredds-docker
   pullPolicy: IfNotPresent
