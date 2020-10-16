@@ -6,7 +6,7 @@ replicaCount: 1
 
 initImage:
   repository: davidedelerma/init-thredds
-  tag: c6a5985
+  tag: 648ba35
 
 image:
   repository: unidata/thredds-docker
