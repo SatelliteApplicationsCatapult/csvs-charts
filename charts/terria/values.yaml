@@ -2943,6 +2943,1338 @@ initConfig:
         type: "wms"
         url: "http://thredds:8080/thredds/wms/30year/ERA5_30year_TotalPrecip.nc?service=WMS&version=1.3.0&request=GetCapabilities"
 
+
+    - isOpen: false
+      items:
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1981</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1981.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1981-01-01T11:00:00Z&time_end=1981-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1981
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1981.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1982</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1982.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1982-01-01T11:00:00Z&time_end=1982-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1982
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1982.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1983</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1983.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1983-01-01T11:00:00Z&time_end=1983-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1983
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1983.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1984</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1984.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1984-01-01T11:00:00Z&time_end=1984-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1984
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1984.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1985</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1985.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1985-01-01T11:00:00Z&time_end=1985-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1985
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1985.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1986</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1986.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1986-01-01T11:00:00Z&time_end=1986-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1986
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1986.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1987</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1987.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1987-01-01T11:00:00Z&time_end=1987-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1987
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1987.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1988</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1988.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1988-01-01T11:00:00Z&time_end=1988-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1988
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1988.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1989</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1989.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1989-01-01T11:00:00Z&time_end=1989-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1989
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1989.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1990</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1990.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1990-01-01T11:00:00Z&time_end=1990-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1990
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1990.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1991</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1991.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1991-01-01T11:00:00Z&time_end=1991-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1991
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1991.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1992</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1992.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1992-01-01T11:00:00Z&time_end=1992-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1992
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1992.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1993</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1993.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1993-01-01T11:00:00Z&time_end=1993-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1993
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1993.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1994</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1994.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1994-01-01T11:00:00Z&time_end=1994-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1994
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1994.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1995</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1995.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1995-01-01T11:00:00Z&time_end=1995-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1995
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1995.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1996</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1996.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1996-01-01T11:00:00Z&time_end=1996-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1996
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1996.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1997</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1997.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1997-01-01T11:00:00Z&time_end=1997-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1997
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1997.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1998</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1998.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1998-01-01T11:00:00Z&time_end=1998-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1998
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1998.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 1999</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1999.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1999-01-01T11:00:00Z&time_end=1999-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 1999
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_1999.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2000</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2000.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2000-01-01T11:00:00Z&time_end=2000-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2000
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2000.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2001</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2001.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2001-01-01T11:00:00Z&time_end=2001-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2001
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2001.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2002</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2002.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2002-01-01T11:00:00Z&time_end=2002-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2002
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2002.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2003</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2003.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2003-01-01T11:00:00Z&time_end=2003-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2003
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2003.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2004</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2004.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2004-01-01T11:00:00Z&time_end=2004-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2004
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2004.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2005</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2005.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2005-01-01T11:00:00Z&time_end=2005-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2005
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2005.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2006</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2006.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2006-01-01T11:00:00Z&time_end=2006-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2006
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2006.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2007</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2007.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2007-01-01T11:00:00Z&time_end=2007-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2007
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2007.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2008</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2008.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2008-01-01T11:00:00Z&time_end=2008-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2008
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2008.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2009</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2009.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2009-01-01T11:00:00Z&time_end=2009-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2009
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2009.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2010</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2010.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2010-01-01T11:00:00Z&time_end=2010-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2010
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2010.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2011</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2011.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2011-01-01T11:00:00Z&time_end=2011-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2011
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2011.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2012</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2012.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2012-01-01T11:00:00Z&time_end=2012-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2012
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2012.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2013</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2013.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2013-01-01T11:00:00Z&time_end=2013-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2013
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2013.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2014</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2014.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2014-01-01T11:00:00Z&time_end=2014-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2014
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2014.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2015</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2015.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2015-01-01T11:00:00Z&time_end=2015-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2015
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2015.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2016</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2016.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2016-01-01T11:00:00Z&time_end=2016-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2016
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2016.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2017</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2017.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2017-01-01T11:00:00Z&time_end=2017-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2017
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2017.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2018</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2018.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2018-01-01T11:00:00Z&time_end=2018-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2018
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2018.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land daily mean 2mTemp 2019</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2019.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2019-01-01T11:00:00Z&time_end=2019-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean 2mTemp 2019
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_2mTemp/ERA5-Land_daily_mean_2mTemp_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land daily mean 2mTemp
+        preserveOrder: true
+        type: group
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1981</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1981.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1981-01-01T11:00:00Z&time_end=1981-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1981
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1981.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1982</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1982.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1982-01-01T11:00:00Z&time_end=1982-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1982
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1982.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1983</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1983.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1983-01-01T11:00:00Z&time_end=1983-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1983
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1983.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1984</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1984.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1984-01-01T11:00:00Z&time_end=1984-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1984
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1984.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1985</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1985.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1985-01-01T11:00:00Z&time_end=1985-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1985
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1985.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1986</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1986.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1986-01-01T11:00:00Z&time_end=1986-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1986
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1986.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1987</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1987.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1987-01-01T11:00:00Z&time_end=1987-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1987
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1987.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1988</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1988.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1988-01-01T11:00:00Z&time_end=1988-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1988
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1988.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1989</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1989.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1989-01-01T11:00:00Z&time_end=1989-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1989
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1989.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1990</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1990.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1990-01-01T11:00:00Z&time_end=1990-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1990
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1990.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1991</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1991.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1991-01-01T11:00:00Z&time_end=1991-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1991
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1991.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1992</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1992.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1992-01-01T11:00:00Z&time_end=1992-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1992
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1992.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1993</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1993.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1993-01-01T11:00:00Z&time_end=1993-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1993
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1993.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1994</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1994.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1994-01-01T11:00:00Z&time_end=1994-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1994
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1994.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1995</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1995.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1995-01-01T11:00:00Z&time_end=1995-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1995
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1995.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1996</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1996.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1996-01-01T11:00:00Z&time_end=1996-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1996
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1996.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1997</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1997.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1997-01-01T11:00:00Z&time_end=1997-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1997
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1997.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1998</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1998.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1998-01-01T11:00:00Z&time_end=1998-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1998
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1998.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 1999</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1999.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1999-01-01T11:00:00Z&time_end=1999-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 1999
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_1999.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2000</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2000.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2000-01-01T11:00:00Z&time_end=2000-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2000
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2000.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2001</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2001.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2001-01-01T11:00:00Z&time_end=2001-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2001
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2001.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2002</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2002.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2002-01-01T11:00:00Z&time_end=2002-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2002
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2002.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2003</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2003.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2003-01-01T11:00:00Z&time_end=2003-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2003
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2003.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2004</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2004.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2004-01-01T11:00:00Z&time_end=2004-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2004
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2004.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2005</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2005.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2005-01-01T11:00:00Z&time_end=2005-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2005
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2005.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2006</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2006.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2006-01-01T11:00:00Z&time_end=2006-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2006
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2006.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2007</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2007.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2007-01-01T11:00:00Z&time_end=2007-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2007
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2007.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2008</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2008.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2008-01-01T11:00:00Z&time_end=2008-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2008
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2008.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2009</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2009.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2009-01-01T11:00:00Z&time_end=2009-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2009
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2009.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2010</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2010.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2010-01-01T11:00:00Z&time_end=2010-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2010
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2010.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2011</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2011.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2011-01-01T11:00:00Z&time_end=2011-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2011
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2011.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2012</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2012.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2012-01-01T11:00:00Z&time_end=2012-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2012
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2012.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2013</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2013.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2013-01-01T11:00:00Z&time_end=2013-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2013
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2013.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2014</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2014.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2014-01-01T11:00:00Z&time_end=2014-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2014
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2014.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2015</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2015.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2015-01-01T11:00:00Z&time_end=2015-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2015
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2015.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2016</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2016.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2016-01-01T11:00:00Z&time_end=2016-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2016
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2016.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2017</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2017.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2017-01-01T11:00:00Z&time_end=2017-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2017
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2017.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2018</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2018.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2018-01-01T11:00:00Z&time_end=2018-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2018
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2018.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean RH 2019</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2019.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2019-01-01T11:00:00Z&time_end=2019-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land daily mean RH 2019
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_RH/ERA5-Land_daily_mean_RH_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land daily mean RH
+        preserveOrder: true
+        type: group
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2001</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2001.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2001-01-01T11:00:00Z&time_end=2001-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2001
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2001.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2002</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2002.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2002-01-01T11:00:00Z&time_end=2002-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2002
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2002.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2003</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2003.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2003-01-01T11:00:00Z&time_end=2003-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2003
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2003.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2004</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2004.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2004-01-01T11:00:00Z&time_end=2004-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2004
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2004.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2005</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2005.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2005-01-01T11:00:00Z&time_end=2005-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2005
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2005.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2006</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2006.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2006-01-01T11:00:00Z&time_end=2006-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2006
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2006.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2007</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2007.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2007-01-01T11:00:00Z&time_end=2007-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2007
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2007.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2008</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2008.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2008-01-01T11:00:00Z&time_end=2008-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2008
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2008.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2009</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2009.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2009-01-01T11:00:00Z&time_end=2009-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2009
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2009.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2010</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2010.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2010-01-01T11:00:00Z&time_end=2010-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2010
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2010.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2011</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2011.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2011-01-01T11:00:00Z&time_end=2011-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2011
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2011.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2012</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2012.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2012-01-01T11:00:00Z&time_end=2012-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2012
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2012.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2013</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2013.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2013-01-01T11:00:00Z&time_end=2013-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2013
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2013.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2014</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2014.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2014-01-01T11:00:00Z&time_end=2014-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2014
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2014.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2015</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2015.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2015-01-01T11:00:00Z&time_end=2015-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2015
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2015.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2016</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2016.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2016-01-01T11:00:00Z&time_end=2016-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2016
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2016.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2017</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2017.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2017-01-01T11:00:00Z&time_end=2017-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2017
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2017.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2018</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2018.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2018-01-01T11:00:00Z&time_end=2018-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2018
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2018.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily mean TotalWind 2019</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2019.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2019-01-01T11:00:00Z&time_end=2019-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land daily mean TotalWind 2019
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_mean_TotalWind/ERA5-Land_daily_mean_TotalWind_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land daily mean TotalWind
+        preserveOrder: true
+        type: group
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1981</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1981.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1981-01-01T11:00:00Z&time_end=1981-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1981
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1981.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1982</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1982.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1982-01-01T11:00:00Z&time_end=1982-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1982
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1982.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1983</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1983.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1983-01-01T11:00:00Z&time_end=1983-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1983
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1983.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1984</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1984.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1984-01-01T11:00:00Z&time_end=1984-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1984
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1984.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1985</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1985.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1985-01-01T11:00:00Z&time_end=1985-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1985
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1985.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1986</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1986.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1986-01-01T11:00:00Z&time_end=1986-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1986
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1986.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1987</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1987.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1987-01-01T11:00:00Z&time_end=1987-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1987
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1987.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1988</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1988.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1988-01-01T11:00:00Z&time_end=1988-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1988
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1988.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1989</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1989.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1989-01-01T11:00:00Z&time_end=1989-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1989
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1989.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1990</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1990.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1990-01-01T11:00:00Z&time_end=1990-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1990
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1990.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1991</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1991.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1991-01-01T11:00:00Z&time_end=1991-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1991
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1991.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1992</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1992.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1992-01-01T11:00:00Z&time_end=1992-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1992
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1992.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1993</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1993.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1993-01-01T11:00:00Z&time_end=1993-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1993
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1993.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1994</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1994.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1994-01-01T11:00:00Z&time_end=1994-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1994
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1994.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1995</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1995.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1995-01-01T11:00:00Z&time_end=1995-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1995
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1995.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1996</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1996.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1996-01-01T11:00:00Z&time_end=1996-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1996
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1996.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1997</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1997.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1997-01-01T11:00:00Z&time_end=1997-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1997
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1997.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1998</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1998.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1998-01-01T11:00:00Z&time_end=1998-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1998
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1998.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 1999</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1999.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1999-01-01T11:00:00Z&time_end=1999-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 1999
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_1999.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2000</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2000.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2000-01-01T11:00:00Z&time_end=2000-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2000
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2000.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2001</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2001.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2001-01-01T11:00:00Z&time_end=2001-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2001
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2001.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2002</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2002.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2002-01-01T11:00:00Z&time_end=2002-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2002
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2002.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2003</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2003.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2003-01-01T11:00:00Z&time_end=2003-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2003
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2003.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2004</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2004.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2004-01-01T11:00:00Z&time_end=2004-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2004
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2004.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2005</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2005.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2005-01-01T11:00:00Z&time_end=2005-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2005
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2005.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2006</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2006.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2006-01-01T11:00:00Z&time_end=2006-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2006
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2006.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2007</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2007.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2007-01-01T11:00:00Z&time_end=2007-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2007
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2007.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2008</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2008.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2008-01-01T11:00:00Z&time_end=2008-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2008
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2008.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2009</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2009.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2009-01-01T11:00:00Z&time_end=2009-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2009
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2009.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2010</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2010.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2010-01-01T11:00:00Z&time_end=2010-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2010
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2010.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2011</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2011.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2011-01-01T11:00:00Z&time_end=2011-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2011
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2011.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2012</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2012.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2012-01-01T11:00:00Z&time_end=2012-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2012
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2012.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2013</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2013.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2013-01-01T11:00:00Z&time_end=2013-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2013
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2013.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2014</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2014.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2014-01-01T11:00:00Z&time_end=2014-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2014
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2014.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2015</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2015.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2015-01-01T11:00:00Z&time_end=2015-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2015
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2015.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2016</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2016.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2016-01-01T11:00:00Z&time_end=2016-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2016
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2016.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2017</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2017.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2017-01-01T11:00:00Z&time_end=2017-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2017
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2017.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2018</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2018.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2018-01-01T11:00:00Z&time_end=2018-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2018
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2018.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land daily total precipitation 2019</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2019.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2019-01-01T11:00:00Z&time_end=2019-12-31T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land daily total precipitation 2019
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_daily_total_precipitation/ERA5-Land_daily_total_precipitation_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land daily total precipitation
+        preserveOrder: true
+        type: group
+      name: ERA5-Land daily
+      preserveOrder: true
+      type: group
+    - isOpen: false
+      items:
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 50
+          colorScaleMinimum: -50
+          featureInfoTemplate: <p>ERA5-Land monthly mean 2mTemp 1981 2019</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_monthly/ERA5-Land_monthly_mean_2mTemp_1981_2019.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1981-01-16T12:00:00Z&time_end=2019-12-16T11:30:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land monthly mean 2mTemp 1981 2019
+          styles: boxfill/red-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_monthly/ERA5-Land_monthly_mean_2mTemp_1981_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land monthly mean 2mTemp
+        preserveOrder: true
+        type: group
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 100
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land monthly mean RH 1981 2019</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_monthly/ERA5-Land_monthly_mean_RH_1981_2019.nc?var=t2m&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1981-01-16T12:00:00Z&time_end=2019-12-16T11:30:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: t2m
+          name: ERA5-Land monthly mean RH 1981 2019
+          styles: boxfill/green-purple
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_monthly/ERA5-Land_monthly_mean_RH_1981_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land monthly mean RH
+        preserveOrder: true
+        type: group
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 13
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land monthly mean TotalWind 2001 2019</p><chart
+            src="http://thredds:8080/thredds/ncss/ERA5-Land_monthly/ERA5-Land_monthly_mean_TotalWind_2001_2019.nc?var=u10&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=2001-01-16T12:00:00Z&time_end=2019-12-16T11:30:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: u10
+          name: ERA5-Land monthly mean TotalWind 2001 2019
+          styles: boxfill/rainbow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_monthly/ERA5-Land_monthly_mean_TotalWind_2001_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land monthly mean TotalWind
+        preserveOrder: true
+        type: group
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land monthly total precipitation 1981 2019</p><chart
+            src="http://thredds:8080/thredds/ncss/ERA5-Land_monthly/ERA5-Land_monthly_total_precipitation_1981_2019.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1981-01-16T12:00:00Z&time_end=2019-12-16T11:30:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land monthly total precipitation 1981 2019
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_monthly/ERA5-Land_monthly_total_precipitation_1981_2019.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land monthly total precipitation
+        preserveOrder: true
+        type: group
+      name: ERA5-Land monthly
+      preserveOrder: true
+      type: group
+    - isOpen: false
+      items:
+      - isOpen: false
+        items:
+        - colorScaleMaximum: 1000
+          colorScaleMinimum: 0
+          featureInfoTemplate: <p>ERA5-Land 30year TotalPrecip</p><chart src="http://thredds:8080/thredds/ncss/ERA5-Land_30year/ERA5-Land_30year_TotalPrecip.nc?var=precipitation_rate&latitude={{terria.coords.latitude}}&longitude={{terria.coords.longitude}}&time_start=1995-07-03T12:00:00Z&time_end=1996-07-01T11:00:00Z&accept=csv"
+            y-column="3" hide-buttons="True"></chart>
+          layers: precipitation_rate
+          name: ERA5-Land 30year TotalPrecip
+          styles: boxfill/blu-yellow
+          type: wms
+          url: http://thredds:8080/thredds/wms/ERA5-Land_30year/ERA5-Land_30year_TotalPrecip.nc?service=WMS&version=1.3.0&request=GetCapabilities
+        name: ERA5-Land 30year TotalPrecip
+        preserveOrder: true
+        type: group
+      name: ERA5-Land 30year
+      preserveOrder: true
+      type: group
 serverConfig:
   port: 3001
   allowProxyFor:
