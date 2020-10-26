@@ -21,7 +21,7 @@ fullnameOverride: ""
 sidecar:
   image:
     repository: satapps/csvs-thredds-sidecar
-    tag: 0.9
+    tag: 0.11
     pullPolicy: IfNotPresent
   awsConcurrentRequests: 1
 
@@ -52,6 +52,10 @@ pvc:
     storageClassName: fast
   trmmData:
     name: trmm-data
+    namespace: dev-csvs
+    storageClassName: fast
+  ncepData:
+    name: ncep-data
     namespace: dev-csvs
     storageClassName: fast
 
