@@ -67,6 +67,15 @@ spec:
               resources:
                 requests:
                   storage: 200Gi
+          - metadata:
+              name: {{ .Values.pvc.trmmData.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.era5LandData.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 20Gi
   template:
     metadata:
     {{- with .Values.podAnnotations }}
@@ -107,6 +116,8 @@ spec:
             name:  {{ .Values.pvc.netcdfDaily3.name }}
           - mountPath: "/usr/local/era5-land"
             name:  {{ .Values.pvc.era5LandData.name }}
+          - mountPath: "/usr/local/trmm"
+            name:  {{ .Values.pvc.trmmData.name }}
           env:
           - name: CONCURRENT_REQUESTS
             value: {{ .Values.sidecar.awsConcurrentRequests | quote }}
@@ -138,6 +149,8 @@ spec:
             name:  {{ .Values.pvc.netcdfDaily3.name }}
           - mountPath: "/usr/local/era5-land"
             name:  {{ .Values.pvc.era5LandData.name }}
+          - mountPath: "/usr/local/trmm"
+            name:  {{ .Values.pvc.trmmData.name }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}

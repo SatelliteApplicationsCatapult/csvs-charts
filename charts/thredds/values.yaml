@@ -50,6 +50,10 @@ pvc:
     name: era5-land-data
     namespace: dev-csvs
     storageClassName: fast
+  trmmData:
+    name: trmm-data
+    namespace: dev-csvs
+    storageClassName: fast
 
 serviceAccount:
   # Specifies whether a service account should be created
