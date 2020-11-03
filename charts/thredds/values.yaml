@@ -7,6 +7,7 @@ replicaCount: 1
 initImage:
   repository: satapps/init-thredds
   tag: '65cfea6'
+  pullPolicy: IfNotPresent
 
 image:
   repository: unidata/thredds-docker

@@ -104,7 +104,7 @@ spec:
       initContainers:
       - name: init-{{ .Chart.Name }}
         image: "{{ .Values.initImage.repository }}:{{ .Values.initImage.tag }}"
-        imagePullPolicy: Always
+        imagePullPolicy: {{ .Values.initImage.pullPolicy }}
         volumeMounts:
         - name: {{ .Values.pvc.configuration.name }}
           mountPath: "/thredds-content"
