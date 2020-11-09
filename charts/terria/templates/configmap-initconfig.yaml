@@ -6,5 +6,6 @@ metadata:
     {{- include "terria.labels" . | nindent 4 }}
 data:
   terria.json: '{{ toJson .Values.initConfig | indent 2 }}'
+  metoffice.json: '{{ toJson .Values.initMetofficeConfig | indent 2 }}'
 
 

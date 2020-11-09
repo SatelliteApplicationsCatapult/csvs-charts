@@ -87,6 +87,7 @@ authentication:
 clientConfig:
   initializationUrls:
   - terria
+  - metoffice
   parameters:
     googleUrlShortenerKey: null
     googleAnalyticsKey: null
