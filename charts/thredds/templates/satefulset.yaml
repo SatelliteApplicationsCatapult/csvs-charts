@@ -85,6 +85,15 @@ spec:
               resources:
                 requests:
                   storage: 5Gi
+          - metadata:
+              name: {{ .Values.pvc.gpcpData.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.gpcpData.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 2Gi
   template:
     metadata:
     {{- with .Values.podAnnotations }}
@@ -129,6 +138,8 @@ spec:
             name:  {{ .Values.pvc.trmmData.name }}
           - mountPath: "/usr/local/ncep"
             name:  {{ .Values.pvc.ncepData.name }}
+          - mountPath: "/usr/local/gpcp"
+            name:  {{ .Values.pvc.gpcpData.name }}
           env:
           - name: CONCURRENT_REQUESTS
             value: {{ .Values.sidecar.awsConcurrentRequests | quote }}
@@ -164,6 +175,8 @@ spec:
             name:  {{ .Values.pvc.trmmData.name }}
           - mountPath: "/usr/local/ncep"
             name:  {{ .Values.pvc.ncepData.name }}
+          - mountPath: "/usr/local/gpcp"
+            name:  {{ .Values.pvc.gpcpData.name }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}
