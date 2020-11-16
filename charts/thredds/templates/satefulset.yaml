@@ -94,6 +94,15 @@ spec:
               resources:
                 requests:
                   storage: 5Gi
+          - metadata:
+              name: {{ .Values.pvc.cruData.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.cruData.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 25Gi
   template:
     metadata:
     {{- with .Values.podAnnotations }}
@@ -140,6 +149,8 @@ spec:
             name:  {{ .Values.pvc.ncepData.name }}
           - mountPath: "/usr/local/gpcp"
             name:  {{ .Values.pvc.gpcpData.name }}
+          - mountPath: "/usr/local/cru"
+            name:  {{ .Values.pvc.cruData.name }}
           env:
           - name: CONCURRENT_REQUESTS
             value: {{ .Values.sidecar.awsConcurrentRequests | quote }}
@@ -177,6 +188,8 @@ spec:
             name:  {{ .Values.pvc.ncepData.name }}
           - mountPath: "/usr/local/gpcp"
             name:  {{ .Values.pvc.gpcpData.name }}
+          - mountPath: "/usr/local/cru"
+            name:  {{ .Values.pvc.cruData.name }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}
