@@ -93,7 +93,7 @@ spec:
                 - ReadWriteOnce
               resources:
                 requests:
-                  storage: 2Gi
+                  storage: 5Gi
   template:
     metadata:
     {{- with .Values.podAnnotations }}

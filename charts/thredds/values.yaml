@@ -6,7 +6,7 @@ replicaCount: 1
 
 initImage:
   repository: satapps/init-thredds
-  tag: '65cfea6'
+  tag: 'b9a9d8b'
   pullPolicy: IfNotPresent
 
 image:
@@ -23,7 +23,7 @@ sidecar:
   image:
     repository: satapps/csvs-thredds-sidecar
     tag: '0.11'
-    pullPolicy: Always
+    pullPolicy: IfNotPresent
   awsConcurrentRequests: 1
 
 pvc:
