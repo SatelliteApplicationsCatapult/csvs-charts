@@ -103,6 +103,15 @@ spec:
               resources:
                 requests:
                   storage: 25Gi
+          - metadata:
+              name: {{ .Values.pvc.cmapData.name }}
+            spec:
+              storageClassName: {{ .Values.pvc.cmapData.storageClassName | quote }}
+              accessModes:
+                - ReadWriteOnce
+              resources:
+                requests:
+                  storage: 5Gi
   template:
     metadata:
     {{- with .Values.podAnnotations }}
@@ -151,6 +160,8 @@ spec:
             name:  {{ .Values.pvc.gpcpData.name }}
           - mountPath: "/usr/local/cru"
             name:  {{ .Values.pvc.cruData.name }}
+          - mountPath: "/usr/local/cmap"
+            name:  {{ .Values.pvc.cmapData.name }}
           env:
           - name: CONCURRENT_REQUESTS
             value: {{ .Values.sidecar.awsConcurrentRequests | quote }}
@@ -190,6 +201,8 @@ spec:
             name:  {{ .Values.pvc.gpcpData.name }}
           - mountPath: "/usr/local/cru"
             name:  {{ .Values.pvc.cruData.name }}
+          - mountPath: "/usr/local/cmap"
+            name:  {{ .Values.pvc.cmapData.name }}
           ports:
             - name: liveness-port
               containerPort: {{ .Values.service.port }}
