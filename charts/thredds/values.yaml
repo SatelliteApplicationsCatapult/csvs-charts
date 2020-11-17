@@ -6,7 +6,7 @@ replicaCount: 1
 
 initImage:
   repository: satapps/init-thredds
-  tag: '4c445d4'
+  tag: '96af9cc'
   pullPolicy: IfNotPresent
 
 image:
@@ -22,7 +22,7 @@ fullnameOverride: ""
 sidecar:
   image:
     repository: satapps/csvs-thredds-sidecar
-    tag: '0.12'
+    tag: '0.13'
     pullPolicy: IfNotPresent
   awsConcurrentRequests: 1
 
@@ -65,6 +65,10 @@ pvc:
     storageClassName: fast
   cruData:
     name: cru-data
+    namespace: dev-csvs
+    storageClassName: fast
+  cmapData:
+    name: cmap-data
     namespace: dev-csvs
     storageClassName: fast
 
