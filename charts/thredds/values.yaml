@@ -6,7 +6,7 @@ replicaCount: 1
 
 initImage:
   repository: satapps/init-thredds
-  tag: '96af9cc'
+  tag: '76796b2'
   pullPolicy: IfNotPresent
 
 image:
