@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  lint:
+  linting:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
