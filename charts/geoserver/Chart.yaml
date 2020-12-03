@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 
 name: geoserver
 description: A Helm chart for deploying GeoServer
@@ -15,7 +15,7 @@ type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: 0.19.19
+version: 0.20.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
