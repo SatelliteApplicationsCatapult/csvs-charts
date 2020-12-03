@@ -16,10 +16,9 @@ jobs:
         run: git fetch --prune --unshallow
 
       - name: Run chart-testing (lint)
-        id: lint
-        # Support for Helm 2 is on branch dev-v2.
-        uses: helm/chart-testing-action@dev-v2
+        uses: helm/chart-testing-action@v1.0.0-rc.2
         with:
+          config: .github/ct-lint.yaml
           command: lint
 
   validation:
