@@ -1,6 +1,6 @@
 annotations:
   category: Database
-apiVersion: v1
+apiVersion: v2
 appVersion: 11.10.0
 dependencies:
   - name: common

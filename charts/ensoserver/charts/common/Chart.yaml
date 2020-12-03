@@ -1,6 +1,6 @@
 annotations:
   category: Infrastructure
-apiVersion: v1
+apiVersion: v2
 # Please make sure that version and appVersion are always the same.
 appVersion: 1.1.1
 description: A Library Helm Chart for grouping common logic between bitnami charts. This chart is not deployable by itself.
