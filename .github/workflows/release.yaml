@@ -36,30 +36,10 @@ jobs:
         with:
           path: ./charts
 
-  release:
-    runs-on: ubuntu-latest
-    needs:
-      - validation
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@master
-        with:
-          charts_repo_url: https://SatelliteApplicationsCatapult.github.io/csvs-charts
-        env:
-          CR_TOKEN: "${{ secrets.CR_TOKEN }}"
-
   update-readme:
     runs-on: ubuntu-latest
     needs:
-      - release
+      - validation
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -80,3 +60,23 @@ jobs:
         env:
           COMMIT_MSG: "Update chart documentation"
           GITHUB_TOKEN: ${{ secrets.CR_TOKEN }}
+
+  release:
+    runs-on: ubuntu-latest
+    needs:
+      - update-readme
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Run chart-releaser
+        uses: helm/chart-releaser-action@v1.0.0
+        with:
+          charts_repo_url: https://juanezm.github.io/csvs-charts
+        env:
+          CR_TOKEN: "${{ secrets.CR_TOKEN }}"
