@@ -85,3 +85,8 @@ postgresql:
   postgresqlPassword: supersecret
   postgresqlDatabase: ensoserver
   servicePort: 5432
+
+update:
+  ttlSecondsAfterFinished: 3600
+  apiMethod: PUT
+  apiEntrypoint: /enso

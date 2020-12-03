@@ -1,18 +1,21 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: update-enso-data
+  name: {{ .Release.Name }}-update
 spec:
   schedule: "0 0 15 * *"
   jobTemplate:
     spec:
+{{- with .Values.update.ttlSecondsAfterFinished }}
+      ttlSecondsAfterFinished: {{ . }}
+{{- end }}
       template:
         spec:
           containers:
-          - name: update-enso-data
+          - name: {{ .Release.Name }}-update
             image: curlimages/curl:7.73.0
             args:
             - sh
             - -c
-            - curl -X PUT http://{{ .Release.Name }}/enso
+            - curl -X {{ .Values.update.apiMethod }} http://{{ .Release.Name }}{{ .Values.update.apiEntrypoint }}
           restartPolicy: OnFailure
