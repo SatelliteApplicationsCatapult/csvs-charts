@@ -100,7 +100,7 @@ spec:
           - ReadWriteOnce
         resources:
           requests:
-            storage: 6Gi
+            storage: 80Gi
     {{- end }}
     {{- if .Values.pvc.vectors.enabled }}
     - metadata:
