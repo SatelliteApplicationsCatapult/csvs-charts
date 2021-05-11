@@ -2,7 +2,7 @@ ensoserver
 ==========
 A Helm chart for Kubernetes
 
-Current chart version is `0.1.2`
+Current chart version is `0.1.3`
 
 Source code can be found [here](https://github.com/SatelliteApplicationsCatapult/csvs-enso-server)
 
